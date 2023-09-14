@@ -1,0 +1,11 @@
+I, [2023-09-14T06:27:56.113052 #244]  INFO -- : pid=/home/redmine/redmine/tmp/pids/unicorn.pid possibly stale, got EPERM signalling PID:246
+I, [2023-09-14T06:27:56.113582 #244]  INFO -- : Refreshing Gem list
+I, [2023-09-14T06:28:09.864726 #244]  INFO -- : listening on addr=/home/redmine/redmine/tmp/sockets/redmine.socket fd=8
+I, [2023-09-14T06:28:09.865162 #244]  INFO -- : listening on addr=127.0.0.1:8080 fd=9
+Unknown MySQL ssl_mode flag: prefer
+I, [2023-09-14T06:28:09.966980 #244]  INFO -- : master process ready
+I, [2023-09-14T06:28:10.072354 #249]  INFO -- : worker=0 ready
+I, [2023-09-14T06:28:10.083607 #251]  INFO -- : worker=1 ready
+Unknown MySQL ssl_mode flag: prefer
+Unknown MySQL ssl_mode flag: prefer
+Unknown MySQL ssl_mode flag: prefer

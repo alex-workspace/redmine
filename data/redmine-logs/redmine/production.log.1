@@ -1,0 +1,865 @@
+W, [2023-09-08T10:34:24.402223 #299]  WARN -- : Creating scope :system. Overwriting existing method Enumeration.system.
+W, [2023-09-08T10:34:25.134582 #299]  WARN -- : Creating scope :sorted. Overwriting existing method User.sorted.
+W, [2023-09-08T10:34:25.378655 #299]  WARN -- : Creating scope :sorted. Overwriting existing method Group.sorted.
+I, [2023-09-08T10:34:57.175684 #304]  INFO -- : [67526c54-0512-453c-ab36-9c9c96856f27] Started GET "/" for 172.16.0.20 at 2023-09-08 10:34:57 +0000
+I, [2023-09-08T10:34:57.179582 #304]  INFO -- : [67526c54-0512-453c-ab36-9c9c96856f27] Processing by WelcomeController#index as HTML
+I, [2023-09-08T10:34:57.388544 #304]  INFO -- : [67526c54-0512-453c-ab36-9c9c96856f27]   Current user: anonymous
+I, [2023-09-08T10:34:57.608721 #304]  INFO -- : [67526c54-0512-453c-ab36-9c9c96856f27]   Rendered welcome/index.html.erb within layouts/base (Duration: 49.0ms | Allocations: 3852)
+I, [2023-09-08T10:34:57.675971 #304]  INFO -- : [67526c54-0512-453c-ab36-9c9c96856f27]   Rendered layout layouts/base.html.erb (Duration: 116.4ms | Allocations: 12592)
+I, [2023-09-08T10:34:57.676718 #304]  INFO -- : [67526c54-0512-453c-ab36-9c9c96856f27] Completed 200 OK in 497ms (Views: 106.5ms | ActiveRecord: 52.2ms | Allocations: 78174)
+I, [2023-09-08T10:35:02.026398 #306]  INFO -- : [28133e84-9f29-4881-b03b-7e70962640be] Started GET "/login" for 172.16.0.20 at 2023-09-08 10:35:02 +0000
+I, [2023-09-08T10:35:02.030394 #306]  INFO -- : [28133e84-9f29-4881-b03b-7e70962640be] Processing by AccountController#login as HTML
+I, [2023-09-08T10:35:02.238767 #306]  INFO -- : [28133e84-9f29-4881-b03b-7e70962640be]   Current user: anonymous
+I, [2023-09-08T10:35:02.267541 #306]  INFO -- : [28133e84-9f29-4881-b03b-7e70962640be]   Rendered account/login.html.erb within layouts/base (Duration: 19.5ms | Allocations: 1404)
+I, [2023-09-08T10:35:02.474337 #306]  INFO -- : [28133e84-9f29-4881-b03b-7e70962640be]   Rendered layout layouts/base.html.erb (Duration: 226.5ms | Allocations: 45571)
+I, [2023-09-08T10:35:02.475062 #306]  INFO -- : [28133e84-9f29-4881-b03b-7e70962640be] Completed 200 OK in 444ms (Views: 198.9ms | ActiveRecord: 47.3ms | Allocations: 77697)
+I, [2023-09-08T10:35:10.075718 #306]  INFO -- : [952b88c8-28a3-48be-8f67-0ce913698c2d] Started POST "/login" for 172.16.0.20 at 2023-09-08 10:35:10 +0000
+I, [2023-09-08T10:35:10.076947 #306]  INFO -- : [952b88c8-28a3-48be-8f67-0ce913698c2d] Processing by AccountController#login as HTML
+I, [2023-09-08T10:35:10.077069 #306]  INFO -- : [952b88c8-28a3-48be-8f67-0ce913698c2d]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"N+SsN06joSsdJ/QKwjpOnexyTJiRrIvy1h57M9VRQtkUlH8CcVVQvCA7lJimAh7+NW58eQDW17LwzwK6ej+G2w==", "back_url"=>"/", "username"=>"anhdh", "password"=>"[FILTERED]", "login"=>"Login"}
+I, [2023-09-08T10:35:10.084079 #306]  INFO -- : [952b88c8-28a3-48be-8f67-0ce913698c2d]   Current user: anonymous
+E, [2023-09-08T10:35:15.409675 #306] ERROR -- : [952b88c8-28a3-48be-8f67-0ce913698c2d] An error occurred when authenticating anhdh: LDAP: Connection timed out - user specified timeout
+I, [2023-09-08T10:35:15.418624 #306]  INFO -- : [952b88c8-28a3-48be-8f67-0ce913698c2d]   Rendered common/error.html.erb within layouts/base (Duration: 6.5ms | Allocations: 235)
+I, [2023-09-08T10:35:15.443372 #306]  INFO -- : [952b88c8-28a3-48be-8f67-0ce913698c2d]   Rendered layout layouts/base.html.erb (Duration: 31.3ms | Allocations: 4681)
+I, [2023-09-08T10:35:15.443833 #306]  INFO -- : [952b88c8-28a3-48be-8f67-0ce913698c2d] Completed 500 Internal Server Error in 5367ms (Views: 27.6ms | ActiveRecord: 15.1ms | Allocations: 20930)
+I, [2023-09-08T10:35:22.586530 #306]  INFO -- : [2b1c0d54-a37f-4691-b997-6b58b02ecf6c] Started GET "/login" for 172.16.0.20 at 2023-09-08 10:35:22 +0000
+I, [2023-09-08T10:35:22.587660 #306]  INFO -- : [2b1c0d54-a37f-4691-b997-6b58b02ecf6c] Processing by AccountController#login as HTML
+I, [2023-09-08T10:35:22.594536 #306]  INFO -- : [2b1c0d54-a37f-4691-b997-6b58b02ecf6c]   Current user: anonymous
+I, [2023-09-08T10:35:22.597065 #306]  INFO -- : [2b1c0d54-a37f-4691-b997-6b58b02ecf6c]   Rendered account/login.html.erb within layouts/base (Duration: 1.5ms | Allocations: 457)
+I, [2023-09-08T10:35:22.617631 #306]  INFO -- : [2b1c0d54-a37f-4691-b997-6b58b02ecf6c]   Rendered layout layouts/base.html.erb (Duration: 22.1ms | Allocations: 4845)
+I, [2023-09-08T10:35:22.618026 #306]  INFO -- : [2b1c0d54-a37f-4691-b997-6b58b02ecf6c] Completed 200 OK in 30ms (Views: 17.4ms | ActiveRecord: 8.2ms | Allocations: 5693)
+W, [2023-09-08T10:42:56.211261 #245]  WARN -- : Creating scope :system. Overwriting existing method Enumeration.system.
+W, [2023-09-08T10:42:56.441441 #245]  WARN -- : Creating scope :sorted. Overwriting existing method User.sorted.
+W, [2023-09-08T10:42:56.555231 #245]  WARN -- : Creating scope :sorted. Overwriting existing method Group.sorted.
+W, [2023-09-08T10:44:19.572183 #246]  WARN -- : Creating scope :system. Overwriting existing method Enumeration.system.
+W, [2023-09-08T10:44:19.800749 #246]  WARN -- : Creating scope :sorted. Overwriting existing method User.sorted.
+W, [2023-09-08T10:44:19.917477 #246]  WARN -- : Creating scope :sorted. Overwriting existing method Group.sorted.
+W, [2023-09-08T10:46:17.912300 #246]  WARN -- : Creating scope :system. Overwriting existing method Enumeration.system.
+W, [2023-09-08T10:46:18.141727 #246]  WARN -- : Creating scope :sorted. Overwriting existing method User.sorted.
+W, [2023-09-08T10:46:18.254244 #246]  WARN -- : Creating scope :sorted. Overwriting existing method Group.sorted.
+I, [2023-09-08T10:46:46.611171 #251]  INFO -- : [ffb909ce-e527-498a-a20d-b037e3cbee55] Started GET "/" for 172.16.0.20 at 2023-09-08 10:46:46 +0000
+I, [2023-09-08T10:46:46.615209 #251]  INFO -- : [ffb909ce-e527-498a-a20d-b037e3cbee55] Processing by WelcomeController#index as HTML
+I, [2023-09-08T10:46:46.818674 #251]  INFO -- : [ffb909ce-e527-498a-a20d-b037e3cbee55]   Current user: anonymous
+I, [2023-09-08T10:46:46.998171 #251]  INFO -- : [ffb909ce-e527-498a-a20d-b037e3cbee55]   Rendered welcome/index.html.erb within layouts/base (Duration: 15.5ms | Allocations: 3852)
+I, [2023-09-08T10:46:47.045900 #251]  INFO -- : [ffb909ce-e527-498a-a20d-b037e3cbee55]   Rendered layout layouts/base.html.erb (Duration: 63.4ms | Allocations: 12592)
+I, [2023-09-08T10:46:47.046671 #251]  INFO -- : [ffb909ce-e527-498a-a20d-b037e3cbee55] Completed 200 OK in 431ms (Views: 54.5ms | ActiveRecord: 44.6ms | Allocations: 78172)
+I, [2023-09-08T10:46:49.599207 #251]  INFO -- : [f432536e-c591-4f58-a6e8-4847a2ed7720] Started GET "/login" for 172.16.0.20 at 2023-09-08 10:46:49 +0000
+I, [2023-09-08T10:46:49.600396 #251]  INFO -- : [f432536e-c591-4f58-a6e8-4847a2ed7720] Processing by AccountController#login as HTML
+I, [2023-09-08T10:46:49.606326 #251]  INFO -- : [f432536e-c591-4f58-a6e8-4847a2ed7720]   Current user: anonymous
+I, [2023-09-08T10:46:49.616619 #251]  INFO -- : [f432536e-c591-4f58-a6e8-4847a2ed7720]   Rendered account/login.html.erb within layouts/base (Duration: 7.7ms | Allocations: 1306)
+I, [2023-09-08T10:46:49.639187 #251]  INFO -- : [f432536e-c591-4f58-a6e8-4847a2ed7720]   Rendered layout layouts/base.html.erb (Duration: 30.3ms | Allocations: 5740)
+I, [2023-09-08T10:46:49.639744 #251]  INFO -- : [f432536e-c591-4f58-a6e8-4847a2ed7720] Completed 200 OK in 39ms (Views: 27.5ms | ActiveRecord: 6.1ms | Allocations: 6967)
+I, [2023-09-08T10:47:47.204409 #253]  INFO -- : [d0a73242-8ae5-432d-80c5-ca3c3caccb73] Started POST "/login" for 172.16.0.20 at 2023-09-08 10:47:47 +0000
+I, [2023-09-08T10:47:47.208985 #253]  INFO -- : [d0a73242-8ae5-432d-80c5-ca3c3caccb73] Processing by AccountController#login as HTML
+I, [2023-09-08T10:47:47.209131 #253]  INFO -- : [d0a73242-8ae5-432d-80c5-ca3c3caccb73]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"pYi3lw3EhGij0zHhHfpLVJqEuhRXBCAIVcuZA1jAGPFkLR7i1xh9TUG0SA4kXBxEWKmiXyQNmag6kp3riUbm/A==", "back_url"=>"/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+I, [2023-09-08T10:47:47.412024 #253]  INFO -- : [d0a73242-8ae5-432d-80c5-ca3c3caccb73]   Current user: anonymous
+I, [2023-09-08T10:47:47.427007 #253]  INFO -- : [d0a73242-8ae5-432d-80c5-ca3c3caccb73] Successful authentication for 'admin' from 172.16.0.20 at 2023-09-08 10:47:47 UTC
+I, [2023-09-08T10:47:47.477178 #253]  INFO -- : [d0a73242-8ae5-432d-80c5-ca3c3caccb73] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T10:47:47.477612 #253]  INFO -- : [d0a73242-8ae5-432d-80c5-ca3c3caccb73] Completed 302 Found in 268ms (ActiveRecord: 40.9ms | Allocations: 38117)
+I, [2023-09-08T10:47:47.600225 #253]  INFO -- : [3b0e3ecc-eda8-47f0-95f4-c73bc6e9a278] Started GET "/" for 172.16.0.20 at 2023-09-08 10:47:47 +0000
+I, [2023-09-08T10:47:47.601398 #253]  INFO -- : [3b0e3ecc-eda8-47f0-95f4-c73bc6e9a278] Processing by WelcomeController#index as HTML
+I, [2023-09-08T10:47:47.613241 #253]  INFO -- : [3b0e3ecc-eda8-47f0-95f4-c73bc6e9a278]   Current user: admin (id=1)
+I, [2023-09-08T10:47:47.766520 #253]  INFO -- : [3b0e3ecc-eda8-47f0-95f4-c73bc6e9a278]   Rendered welcome/index.html.erb within layouts/base (Duration: 84.7ms | Allocations: 9795)
+I, [2023-09-08T10:47:47.800802 #253]  INFO -- : [3b0e3ecc-eda8-47f0-95f4-c73bc6e9a278]   Rendered layout layouts/base.html.erb (Duration: 119.1ms | Allocations: 16828)
+I, [2023-09-08T10:47:47.801325 #253]  INFO -- : [3b0e3ecc-eda8-47f0-95f4-c73bc6e9a278] Completed 200 OK in 200ms (Views: 103.3ms | ActiveRecord: 36.5ms | Allocations: 31340)
+I, [2023-09-08T10:47:53.718557 #251]  INFO -- : [3e11de32-9392-47a3-a5d6-9a78573a2b77] Started GET "/admin" for 172.16.0.20 at 2023-09-08 10:47:53 +0000
+I, [2023-09-08T10:47:53.719872 #251]  INFO -- : [3e11de32-9392-47a3-a5d6-9a78573a2b77] Processing by AdminController#index as HTML
+I, [2023-09-08T10:47:53.736189 #251]  INFO -- : [3e11de32-9392-47a3-a5d6-9a78573a2b77]   Current user: admin (id=1)
+I, [2023-09-08T10:47:53.771444 #251]  INFO -- : [3e11de32-9392-47a3-a5d6-9a78573a2b77]   Rendered admin/index.html.erb within layouts/admin (Duration: 28.6ms | Allocations: 2077)
+I, [2023-09-08T10:47:53.821592 #251]  INFO -- : [3e11de32-9392-47a3-a5d6-9a78573a2b77]   Rendered layouts/base.html.erb (Duration: 44.8ms | Allocations: 11159)
+I, [2023-09-08T10:47:53.821787 #251]  INFO -- : [3e11de32-9392-47a3-a5d6-9a78573a2b77]   Rendered layout layouts/admin.html.erb (Duration: 79.0ms | Allocations: 13491)
+I, [2023-09-08T10:47:53.822187 #251]  INFO -- : [3e11de32-9392-47a3-a5d6-9a78573a2b77] Completed 200 OK in 102ms (Views: 76.6ms | ActiveRecord: 12.6ms | Allocations: 16232)
+I, [2023-09-08T10:47:56.478976 #251]  INFO -- : [f3f6acdf-611c-4562-a27c-d59b4447661b] Started GET "/auth_sources" for 172.16.0.20 at 2023-09-08 10:47:56 +0000
+I, [2023-09-08T10:47:56.480142 #251]  INFO -- : [f3f6acdf-611c-4562-a27c-d59b4447661b] Processing by AuthSourcesController#index as HTML
+I, [2023-09-08T10:47:56.488928 #251]  INFO -- : [f3f6acdf-611c-4562-a27c-d59b4447661b]   Current user: admin (id=1)
+I, [2023-09-08T10:47:56.568862 #251]  INFO -- : [f3f6acdf-611c-4562-a27c-d59b4447661b]   Rendered auth_sources/index.html.erb within layouts/admin (Duration: 17.6ms | Allocations: 1314)
+I, [2023-09-08T10:47:56.592590 #251]  INFO -- : [f3f6acdf-611c-4562-a27c-d59b4447661b]   Rendered layouts/base.html.erb (Duration: 19.1ms | Allocations: 4644)
+I, [2023-09-08T10:47:56.592785 #251]  INFO -- : [f3f6acdf-611c-4562-a27c-d59b4447661b]   Rendered layout layouts/admin.html.erb (Duration: 41.6ms | Allocations: 7638)
+I, [2023-09-08T10:47:56.593199 #251]  INFO -- : [f3f6acdf-611c-4562-a27c-d59b4447661b] Completed 200 OK in 113ms (Views: 37.4ms | ActiveRecord: 14.5ms | Allocations: 23641)
+I, [2023-09-08T10:48:01.032189 #253]  INFO -- : [5d8a4524-0c7e-4d70-be8e-e73622ee69e1] Started GET "/auth_sources/1/test_connection" for 172.16.0.20 at 2023-09-08 10:48:01 +0000
+I, [2023-09-08T10:48:01.033429 #253]  INFO -- : [5d8a4524-0c7e-4d70-be8e-e73622ee69e1] Processing by AuthSourcesController#test_connection as HTML
+I, [2023-09-08T10:48:01.033514 #253]  INFO -- : [5d8a4524-0c7e-4d70-be8e-e73622ee69e1]   Parameters: {"id"=>"1"}
+I, [2023-09-08T10:48:01.042133 #253]  INFO -- : [5d8a4524-0c7e-4d70-be8e-e73622ee69e1]   Current user: admin (id=1)
+I, [2023-09-08T10:48:06.351503 #253]  INFO -- : [5d8a4524-0c7e-4d70-be8e-e73622ee69e1] Redirected to http://192.168.45.28:10083/auth_sources
+I, [2023-09-08T10:48:06.351941 #253]  INFO -- : [5d8a4524-0c7e-4d70-be8e-e73622ee69e1] Completed 302 Found in 5318ms (ActiveRecord: 7.4ms | Allocations: 15638)
+I, [2023-09-08T10:48:06.374257 #253]  INFO -- : [7a5df83c-905e-47f5-9d2e-bfb0155771fe] Started GET "/auth_sources" for 172.16.0.20 at 2023-09-08 10:48:06 +0000
+I, [2023-09-08T10:48:06.375376 #253]  INFO -- : [7a5df83c-905e-47f5-9d2e-bfb0155771fe] Processing by AuthSourcesController#index as HTML
+I, [2023-09-08T10:48:06.384266 #253]  INFO -- : [7a5df83c-905e-47f5-9d2e-bfb0155771fe]   Current user: admin (id=1)
+I, [2023-09-08T10:48:06.397263 #253]  INFO -- : [7a5df83c-905e-47f5-9d2e-bfb0155771fe]   Rendered auth_sources/index.html.erb within layouts/admin (Duration: 6.9ms | Allocations: 1315)
+I, [2023-09-08T10:48:06.422715 #253]  INFO -- : [7a5df83c-905e-47f5-9d2e-bfb0155771fe]   Rendered layouts/base.html.erb (Duration: 18.8ms | Allocations: 4680)
+I, [2023-09-08T10:48:06.422864 #253]  INFO -- : [7a5df83c-905e-47f5-9d2e-bfb0155771fe]   Rendered layout layouts/admin.html.erb (Duration: 32.5ms | Allocations: 8158)
+I, [2023-09-08T10:48:06.423246 #253]  INFO -- : [7a5df83c-905e-47f5-9d2e-bfb0155771fe] Completed 200 OK in 48ms (Views: 29.2ms | ActiveRecord: 10.6ms | Allocations: 9907)
+I, [2023-09-08T10:48:07.761421 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006] Started GET "/auth_sources/1/edit" for 172.16.0.20 at 2023-09-08 10:48:07 +0000
+I, [2023-09-08T10:48:07.762598 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006] Processing by AuthSourcesController#edit as HTML
+I, [2023-09-08T10:48:07.762759 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006]   Parameters: {"id"=>"1"}
+I, [2023-09-08T10:48:07.771428 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006]   Current user: admin (id=1)
+I, [2023-09-08T10:48:07.822060 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006]   Rendered auth_sources/edit.html.erb within layouts/admin (Duration: 47.5ms | Allocations: 5657)
+I, [2023-09-08T10:48:07.845459 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006]   Rendered layouts/base.html.erb (Duration: 18.4ms | Allocations: 4661)
+I, [2023-09-08T10:48:07.845661 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006]   Rendered layout layouts/admin.html.erb (Duration: 71.1ms | Allocations: 12068)
+I, [2023-09-08T10:48:07.846003 #253]  INFO -- : [dde0b3b9-1e1a-4ed1-89a0-883913dd0006] Completed 200 OK in 83ms (Views: 67.8ms | ActiveRecord: 8.4ms | Allocations: 13404)
+I, [2023-09-08T10:48:23.847836 #253]  INFO -- : [010faabf-0450-4c4c-a2a5-8c5c91c79e85] Started PATCH "/auth_sources/1" for 172.16.0.20 at 2023-09-08 10:48:23 +0000
+I, [2023-09-08T10:48:23.849155 #253]  INFO -- : [010faabf-0450-4c4c-a2a5-8c5c91c79e85] Processing by AuthSourcesController#update as HTML
+I, [2023-09-08T10:48:23.849306 #253]  INFO -- : [010faabf-0450-4c4c-a2a5-8c5c91c79e85]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"MtoxgG6FZoG7sLYlodgHapLVEqLt3G4ixkBU+4YtbZIlZvsCT9KnzWR+d8Ogmb+sPBr1AYqmQ/KGx/WFBKYWyg==", "auth_source"=>{"name"=>"RedmineLDAP", "host"=>"192.168.45.200", "port"=>"389", "ldap_mode"=>"ldap", "account"=>"cn=admin,dc=nexle,dc=com", "base_dn"=>"ou=people,dc=nexle,dc=com", "filter"=>"", "timeout"=>"", "onthefly_register"=>"1", "attr_login"=>"uid", "attr_firstname"=>"givenName", "attr_lastname"=>"sn", "attr_mail"=>"mail"}, "dummy_password"=>"[FILTERED]", "commit"=>"Save", "id"=>"1"}
+I, [2023-09-08T10:48:23.856222 #253]  INFO -- : [010faabf-0450-4c4c-a2a5-8c5c91c79e85]   Current user: admin (id=1)
+I, [2023-09-08T10:48:23.865900 #253]  INFO -- : [010faabf-0450-4c4c-a2a5-8c5c91c79e85] Redirected to http://192.168.45.28:10083/auth_sources
+I, [2023-09-08T10:48:23.866121 #253]  INFO -- : [010faabf-0450-4c4c-a2a5-8c5c91c79e85] Completed 302 Found in 17ms (ActiveRecord: 5.7ms | Allocations: 2102)
+I, [2023-09-08T10:48:24.101929 #253]  INFO -- : [2cabf982-c915-4878-932d-2226a82175a0] Started GET "/auth_sources" for 172.16.0.20 at 2023-09-08 10:48:24 +0000
+I, [2023-09-08T10:48:24.102970 #253]  INFO -- : [2cabf982-c915-4878-932d-2226a82175a0] Processing by AuthSourcesController#index as HTML
+I, [2023-09-08T10:48:24.109783 #253]  INFO -- : [2cabf982-c915-4878-932d-2226a82175a0]   Current user: admin (id=1)
+I, [2023-09-08T10:48:24.116671 #253]  INFO -- : [2cabf982-c915-4878-932d-2226a82175a0]   Rendered auth_sources/index.html.erb within layouts/admin (Duration: 3.6ms | Allocations: 857)
+I, [2023-09-08T10:48:24.137709 #253]  INFO -- : [2cabf982-c915-4878-932d-2226a82175a0]   Rendered layouts/base.html.erb (Duration: 16.4ms | Allocations: 4638)
+I, [2023-09-08T10:48:24.137952 #253]  INFO -- : [2cabf982-c915-4878-932d-2226a82175a0]   Rendered layout layouts/admin.html.erb (Duration: 25.0ms | Allocations: 7168)
+I, [2023-09-08T10:48:24.138317 #253]  INFO -- : [2cabf982-c915-4878-932d-2226a82175a0] Completed 200 OK in 35ms (Views: 22.6ms | ActiveRecord: 6.5ms | Allocations: 8532)
+I, [2023-09-08T10:48:26.384382 #253]  INFO -- : [c4048827-2b27-463f-880d-b8fbbed9dc7a] Started GET "/auth_sources/1/test_connection" for 172.16.0.20 at 2023-09-08 10:48:26 +0000
+I, [2023-09-08T10:48:26.385452 #253]  INFO -- : [c4048827-2b27-463f-880d-b8fbbed9dc7a] Processing by AuthSourcesController#test_connection as HTML
+I, [2023-09-08T10:48:26.385535 #253]  INFO -- : [c4048827-2b27-463f-880d-b8fbbed9dc7a]   Parameters: {"id"=>"1"}
+I, [2023-09-08T10:48:26.393950 #253]  INFO -- : [c4048827-2b27-463f-880d-b8fbbed9dc7a]   Current user: admin (id=1)
+I, [2023-09-08T10:48:26.401340 #253]  INFO -- : [c4048827-2b27-463f-880d-b8fbbed9dc7a] Redirected to http://192.168.45.28:10083/auth_sources
+I, [2023-09-08T10:48:26.401606 #253]  INFO -- : [c4048827-2b27-463f-880d-b8fbbed9dc7a] Completed 302 Found in 16ms (ActiveRecord: 4.6ms | Allocations: 1415)
+I, [2023-09-08T10:48:26.504044 #253]  INFO -- : [4cc0e8f1-09fe-48b9-b118-860ac6fac404] Started GET "/auth_sources" for 172.16.0.20 at 2023-09-08 10:48:26 +0000
+I, [2023-09-08T10:48:26.505013 #253]  INFO -- : [4cc0e8f1-09fe-48b9-b118-860ac6fac404] Processing by AuthSourcesController#index as HTML
+I, [2023-09-08T10:48:26.512965 #253]  INFO -- : [4cc0e8f1-09fe-48b9-b118-860ac6fac404]   Current user: admin (id=1)
+I, [2023-09-08T10:48:26.520946 #253]  INFO -- : [4cc0e8f1-09fe-48b9-b118-860ac6fac404]   Rendered auth_sources/index.html.erb within layouts/admin (Duration: 4.3ms | Allocations: 851)
+I, [2023-09-08T10:48:26.565931 #253]  INFO -- : [4cc0e8f1-09fe-48b9-b118-860ac6fac404]   Rendered layouts/base.html.erb (Duration: 40.4ms | Allocations: 4638)
+I, [2023-09-08T10:48:26.566110 #253]  INFO -- : [4cc0e8f1-09fe-48b9-b118-860ac6fac404]   Rendered layout layouts/admin.html.erb (Duration: 49.5ms | Allocations: 7162)
+I, [2023-09-08T10:48:26.566446 #253]  INFO -- : [4cc0e8f1-09fe-48b9-b118-860ac6fac404] Completed 200 OK in 61ms (Views: 45.2ms | ActiveRecord: 9.8ms | Allocations: 8525)
+I, [2023-09-08T10:48:29.572917 #253]  INFO -- : [4154602e-b3cb-4b55-92b4-3e6d476fc785] Started GET "/admin" for 172.16.0.20 at 2023-09-08 10:48:29 +0000
+I, [2023-09-08T10:48:29.573990 #253]  INFO -- : [4154602e-b3cb-4b55-92b4-3e6d476fc785] Processing by AdminController#index as HTML
+I, [2023-09-08T10:48:29.582777 #253]  INFO -- : [4154602e-b3cb-4b55-92b4-3e6d476fc785]   Current user: admin (id=1)
+I, [2023-09-08T10:48:29.596454 #253]  INFO -- : [4154602e-b3cb-4b55-92b4-3e6d476fc785]   Rendered admin/index.html.erb within layouts/admin (Duration: 5.3ms | Allocations: 1762)
+I, [2023-09-08T10:48:29.615629 #253]  INFO -- : [4154602e-b3cb-4b55-92b4-3e6d476fc785]   Rendered layouts/base.html.erb (Duration: 18.8ms | Allocations: 4654)
+I, [2023-09-08T10:48:29.615847 #253]  INFO -- : [4154602e-b3cb-4b55-92b4-3e6d476fc785]   Rendered layout layouts/admin.html.erb (Duration: 24.7ms | Allocations: 6503)
+I, [2023-09-08T10:48:29.616292 #253]  INFO -- : [4154602e-b3cb-4b55-92b4-3e6d476fc785] Completed 200 OK in 42ms (Views: 22.2ms | ActiveRecord: 9.9ms | Allocations: 8792)
+I, [2023-09-08T10:48:30.987529 #253]  INFO -- : [54d548bc-ae58-4988-8001-313ad7174033] Started GET "/projects" for 172.16.0.20 at 2023-09-08 10:48:30 +0000
+I, [2023-09-08T10:48:30.988751 #253]  INFO -- : [54d548bc-ae58-4988-8001-313ad7174033] Processing by ProjectsController#index as HTML
+I, [2023-09-08T10:48:30.997585 #253]  INFO -- : [54d548bc-ae58-4988-8001-313ad7174033]   Current user: admin (id=1)
+I, [2023-09-08T10:48:31.466517 #253]  INFO -- : [54d548bc-ae58-4988-8001-313ad7174033]   Rendered projects/index.html.erb within layouts/base (Duration: 382.1ms | Allocations: 117726)
+I, [2023-09-08T10:48:31.502505 #253]  INFO -- : [54d548bc-ae58-4988-8001-313ad7174033]   Rendered layout layouts/base.html.erb (Duration: 418.2ms | Allocations: 124120)
+I, [2023-09-08T10:48:31.503246 #253]  INFO -- : [54d548bc-ae58-4988-8001-313ad7174033] Completed 200 OK in 514ms (Views: 399.1ms | ActiveRecord: 44.9ms | Allocations: 143322)
+I, [2023-09-08T10:48:33.714749 #253]  INFO -- : [c573fbae-9550-4675-9e6f-b1c284fe7f07] Started GET "/admin" for 172.16.0.20 at 2023-09-08 10:48:33 +0000
+I, [2023-09-08T10:48:33.715946 #253]  INFO -- : [c573fbae-9550-4675-9e6f-b1c284fe7f07] Processing by AdminController#index as HTML
+I, [2023-09-08T10:48:33.725826 #253]  INFO -- : [c573fbae-9550-4675-9e6f-b1c284fe7f07]   Current user: admin (id=1)
+I, [2023-09-08T10:48:33.734881 #253]  INFO -- : [c573fbae-9550-4675-9e6f-b1c284fe7f07]   Rendered admin/index.html.erb within layouts/admin (Duration: 5.9ms | Allocations: 1626)
+I, [2023-09-08T10:48:33.755079 #253]  INFO -- : [c573fbae-9550-4675-9e6f-b1c284fe7f07]   Rendered layouts/base.html.erb (Duration: 19.8ms | Allocations: 4652)
+I, [2023-09-08T10:48:33.755284 #253]  INFO -- : [c573fbae-9550-4675-9e6f-b1c284fe7f07]   Rendered layout layouts/admin.html.erb (Duration: 26.4ms | Allocations: 6365)
+I, [2023-09-08T10:48:33.755698 #253]  INFO -- : [c573fbae-9550-4675-9e6f-b1c284fe7f07] Completed 200 OK in 40ms (Views: 22.7ms | ActiveRecord: 9.3ms | Allocations: 7591)
+I, [2023-09-08T10:48:35.894994 #251]  INFO -- : [063998fa-5bae-4a53-a20e-7c854f91ecce] Started GET "/admin/plugins" for 172.16.0.20 at 2023-09-08 10:48:35 +0000
+I, [2023-09-08T10:48:35.896244 #251]  INFO -- : [063998fa-5bae-4a53-a20e-7c854f91ecce] Processing by AdminController#plugins as HTML
+I, [2023-09-08T10:48:35.904676 #251]  INFO -- : [063998fa-5bae-4a53-a20e-7c854f91ecce]   Current user: admin (id=1)
+I, [2023-09-08T10:48:35.931002 #251]  INFO -- : [063998fa-5bae-4a53-a20e-7c854f91ecce]   Rendered admin/plugins.html.erb within layouts/admin (Duration: 24.7ms | Allocations: 510)
+I, [2023-09-08T10:48:35.977252 #251]  INFO -- : [063998fa-5bae-4a53-a20e-7c854f91ecce]   Rendered layouts/base.html.erb (Duration: 41.3ms | Allocations: 4642)
+I, [2023-09-08T10:48:35.977448 #251]  INFO -- : [063998fa-5bae-4a53-a20e-7c854f91ecce]   Rendered layout layouts/admin.html.erb (Duration: 71.2ms | Allocations: 6850)
+I, [2023-09-08T10:48:35.977894 #251]  INFO -- : [063998fa-5bae-4a53-a20e-7c854f91ecce] Completed 200 OK in 81ms (Views: 68.1ms | ActiveRecord: 6.9ms | Allocations: 8066)
+I, [2023-09-08T10:48:38.055101 #251]  INFO -- : [cc3ed2bc-a9a1-4c70-bfc7-71de33d256a0] Started GET "/admin" for 172.16.0.20 at 2023-09-08 10:48:38 +0000
+I, [2023-09-08T10:48:38.056033 #251]  INFO -- : [cc3ed2bc-a9a1-4c70-bfc7-71de33d256a0] Processing by AdminController#index as HTML
+I, [2023-09-08T10:48:38.064558 #251]  INFO -- : [cc3ed2bc-a9a1-4c70-bfc7-71de33d256a0]   Current user: admin (id=1)
+I, [2023-09-08T10:48:38.071508 #251]  INFO -- : [cc3ed2bc-a9a1-4c70-bfc7-71de33d256a0]   Rendered admin/index.html.erb within layouts/admin (Duration: 4.5ms | Allocations: 1610)
+I, [2023-09-08T10:48:38.089333 #251]  INFO -- : [cc3ed2bc-a9a1-4c70-bfc7-71de33d256a0]   Rendered layouts/base.html.erb (Duration: 17.5ms | Allocations: 4615)
+I, [2023-09-08T10:48:38.089504 #251]  INFO -- : [cc3ed2bc-a9a1-4c70-bfc7-71de33d256a0]   Rendered layout layouts/admin.html.erb (Duration: 22.5ms | Allocations: 6312)
+I, [2023-09-08T10:48:38.089869 #251]  INFO -- : [cc3ed2bc-a9a1-4c70-bfc7-71de33d256a0] Completed 200 OK in 34ms (Views: 19.6ms | ActiveRecord: 8.0ms | Allocations: 7539)
+I, [2023-09-08T10:48:39.480486 #251]  INFO -- : [0fbaf417-afc9-4b58-919e-84f02f89c81b] Started GET "/projects" for 172.16.0.20 at 2023-09-08 10:48:39 +0000
+I, [2023-09-08T10:48:39.481572 #251]  INFO -- : [0fbaf417-afc9-4b58-919e-84f02f89c81b] Processing by ProjectsController#index as HTML
+I, [2023-09-08T10:48:39.489663 #251]  INFO -- : [0fbaf417-afc9-4b58-919e-84f02f89c81b]   Current user: admin (id=1)
+I, [2023-09-08T10:48:39.931024 #251]  INFO -- : [0fbaf417-afc9-4b58-919e-84f02f89c81b]   Rendered projects/index.html.erb within layouts/base (Duration: 358.9ms | Allocations: 119930)
+I, [2023-09-08T10:48:39.962601 #251]  INFO -- : [0fbaf417-afc9-4b58-919e-84f02f89c81b]   Rendered layout layouts/base.html.erb (Duration: 390.5ms | Allocations: 126324)
+I, [2023-09-08T10:48:39.963042 #251]  INFO -- : [0fbaf417-afc9-4b58-919e-84f02f89c81b] Completed 200 OK in 481ms (Views: 372.8ms | ActiveRecord: 39.8ms | Allocations: 145558)
+I, [2023-09-08T10:48:41.580025 #253]  INFO -- : [e5921ea1-8cd0-4237-a092-81e0c66b69ec] Started POST "/logout" for 172.16.0.20 at 2023-09-08 10:48:41 +0000
+I, [2023-09-08T10:48:41.581180 #253]  INFO -- : [e5921ea1-8cd0-4237-a092-81e0c66b69ec] Processing by AccountController#logout as HTML
+I, [2023-09-08T10:48:41.581271 #253]  INFO -- : [e5921ea1-8cd0-4237-a092-81e0c66b69ec]   Parameters: {"authenticity_token"=>"jRfDpJNxtpWZYoMqgxgRyql0Qkn4OkbrENFgNb4xqv6aqwkmsiZ32UasQsyCWakMB7ul6p9AaztQVsFLPLrRpg=="}
+I, [2023-09-08T10:48:41.589637 #253]  INFO -- : [e5921ea1-8cd0-4237-a092-81e0c66b69ec]   Current user: admin (id=1)
+I, [2023-09-08T10:48:41.596850 #253]  INFO -- : [e5921ea1-8cd0-4237-a092-81e0c66b69ec] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T10:48:41.597075 #253]  INFO -- : [e5921ea1-8cd0-4237-a092-81e0c66b69ec] Completed 302 Found in 16ms (ActiveRecord: 7.9ms | Allocations: 1340)
+I, [2023-09-08T10:48:41.609633 #253]  INFO -- : [2dbe065c-8714-4268-85c2-3ca3700af11e] Started GET "/" for 172.16.0.20 at 2023-09-08 10:48:41 +0000
+I, [2023-09-08T10:48:41.610538 #253]  INFO -- : [2dbe065c-8714-4268-85c2-3ca3700af11e] Processing by WelcomeController#index as HTML
+I, [2023-09-08T10:48:41.616128 #253]  INFO -- : [2dbe065c-8714-4268-85c2-3ca3700af11e]   Current user: anonymous
+I, [2023-09-08T10:48:41.752545 #253]  INFO -- : [2dbe065c-8714-4268-85c2-3ca3700af11e]   Rendered welcome/index.html.erb within layouts/base (Duration: 1.4ms | Allocations: 371)
+I, [2023-09-08T10:48:41.776958 #253]  INFO -- : [2dbe065c-8714-4268-85c2-3ca3700af11e]   Rendered layout layouts/base.html.erb (Duration: 25.8ms | Allocations: 4815)
+I, [2023-09-08T10:48:41.777418 #253]  INFO -- : [2dbe065c-8714-4268-85c2-3ca3700af11e] Completed 200 OK in 167ms (Views: 21.1ms | ActiveRecord: 21.2ms | Allocations: 35740)
+I, [2023-09-08T10:48:43.686085 #251]  INFO -- : [5c60a561-5804-44f1-be53-36bb41f01ccd] Started GET "/login" for 172.16.0.20 at 2023-09-08 10:48:43 +0000
+I, [2023-09-08T10:48:43.687270 #251]  INFO -- : [5c60a561-5804-44f1-be53-36bb41f01ccd] Processing by AccountController#login as HTML
+I, [2023-09-08T10:48:43.693958 #251]  INFO -- : [5c60a561-5804-44f1-be53-36bb41f01ccd]   Current user: anonymous
+I, [2023-09-08T10:48:43.696982 #251]  INFO -- : [5c60a561-5804-44f1-be53-36bb41f01ccd]   Rendered account/login.html.erb within layouts/base (Duration: 1.7ms | Allocations: 520)
+I, [2023-09-08T10:48:43.718552 #251]  INFO -- : [5c60a561-5804-44f1-be53-36bb41f01ccd]   Rendered layout layouts/base.html.erb (Duration: 23.4ms | Allocations: 4949)
+I, [2023-09-08T10:48:43.719032 #251]  INFO -- : [5c60a561-5804-44f1-be53-36bb41f01ccd] Completed 200 OK in 32ms (Views: 19.5ms | ActiveRecord: 7.2ms | Allocations: 5797)
+I, [2023-09-08T10:48:48.611966 #253]  INFO -- : [fd35e614-0ada-4eed-b8af-4186725afc99] Started POST "/login" for 172.16.0.20 at 2023-09-08 10:48:48 +0000
+I, [2023-09-08T10:48:48.613150 #253]  INFO -- : [fd35e614-0ada-4eed-b8af-4186725afc99] Processing by AccountController#login as HTML
+I, [2023-09-08T10:48:48.613257 #253]  INFO -- : [fd35e614-0ada-4eed-b8af-4186725afc99]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"id4WkGs19lfhsD6fny8AlV2YZGH8O1SgNlbhn/ZmNO1aAeBobgx4PfAHAgthSb1jIpzrlpTWDeMaAgRrY058wQ==", "back_url"=>"/", "username"=>"anhdh", "password"=>"[FILTERED]", "login"=>"Login"}
+I, [2023-09-08T10:48:48.620473 #253]  INFO -- : [fd35e614-0ada-4eed-b8af-4186725afc99]   Current user: anonymous
+I, [2023-09-08T10:48:48.638823 #253]  INFO -- : [fd35e614-0ada-4eed-b8af-4186725afc99] Successful authentication for 'anhdh' from 172.16.0.20 at 2023-09-08 10:48:48 UTC
+I, [2023-09-08T10:48:48.667522 #253]  INFO -- : [fd35e614-0ada-4eed-b8af-4186725afc99] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T10:48:48.667818 #253]  INFO -- : [fd35e614-0ada-4eed-b8af-4186725afc99] Completed 302 Found in 54ms (ActiveRecord: 18.0ms | Allocations: 4441)
+I, [2023-09-08T10:48:48.682480 #253]  INFO -- : [305827df-19e5-4ce7-9443-3479fde4e313] Started GET "/" for 172.16.0.20 at 2023-09-08 10:48:48 +0000
+I, [2023-09-08T10:48:48.683358 #253]  INFO -- : [305827df-19e5-4ce7-9443-3479fde4e313] Processing by WelcomeController#index as HTML
+I, [2023-09-08T10:48:48.690820 #253]  INFO -- : [305827df-19e5-4ce7-9443-3479fde4e313]   Current user: anhdh (id=495)
+I, [2023-09-08T10:48:48.761766 #253]  INFO -- : [305827df-19e5-4ce7-9443-3479fde4e313]   Rendered welcome/index.html.erb within layouts/base (Duration: 13.4ms | Allocations: 2685)
+I, [2023-09-08T10:48:48.782248 #253]  INFO -- : [305827df-19e5-4ce7-9443-3479fde4e313]   Rendered layout layouts/base.html.erb (Duration: 33.9ms | Allocations: 8234)
+I, [2023-09-08T10:48:48.782693 #253]  INFO -- : [305827df-19e5-4ce7-9443-3479fde4e313] Completed 200 OK in 99ms (Views: 29.1ms | ActiveRecord: 20.1ms | Allocations: 19819)
+I, [2023-09-08T10:49:04.102942 #253]  INFO -- : [2a1fec42-1a4c-4317-979a-0c1e9016dd96] Started GET "/projects" for 172.16.0.20 at 2023-09-08 10:49:04 +0000
+I, [2023-09-08T10:49:04.104285 #253]  INFO -- : [2a1fec42-1a4c-4317-979a-0c1e9016dd96] Processing by ProjectsController#index as HTML
+I, [2023-09-08T10:49:04.113931 #253]  INFO -- : [2a1fec42-1a4c-4317-979a-0c1e9016dd96]   Current user: anhdh (id=495)
+I, [2023-09-08T10:49:04.187319 #253]  INFO -- : [2a1fec42-1a4c-4317-979a-0c1e9016dd96]   Rendered projects/index.html.erb within layouts/base (Duration: 40.2ms | Allocations: 10453)
+I, [2023-09-08T10:49:04.231549 #253]  INFO -- : [2a1fec42-1a4c-4317-979a-0c1e9016dd96]   Rendered layout layouts/base.html.erb (Duration: 84.5ms | Allocations: 18425)
+I, [2023-09-08T10:49:04.232009 #253]  INFO -- : [2a1fec42-1a4c-4317-979a-0c1e9016dd96] Completed 200 OK in 128ms (Views: 57.6ms | ActiveRecord: 46.0ms | Allocations: 23796)
+W, [2023-09-08T10:59:53.763672 #246]  WARN -- : Creating scope :system. Overwriting existing method Enumeration.system.
+W, [2023-09-08T10:59:53.989125 #246]  WARN -- : Creating scope :sorted. Overwriting existing method User.sorted.
+W, [2023-09-08T10:59:54.101371 #246]  WARN -- : Creating scope :sorted. Overwriting existing method Group.sorted.
+I, [2023-09-08T11:00:01.532070 #251]  INFO -- : [34b3ee6d-9ed8-412b-9c27-65c62fb82f88] Started GET "/" for 172.16.0.20 at 2023-09-08 11:00:01 +0000
+I, [2023-09-08T11:00:01.536845 #251]  INFO -- : [34b3ee6d-9ed8-412b-9c27-65c62fb82f88] Processing by WelcomeController#index as HTML
+I, [2023-09-08T11:00:01.755497 #251]  INFO -- : [34b3ee6d-9ed8-412b-9c27-65c62fb82f88]   Current user: anonymous
+I, [2023-09-08T11:00:01.942293 #251]  INFO -- : [34b3ee6d-9ed8-412b-9c27-65c62fb82f88]   Rendered welcome/index.html.erb within layouts/base (Duration: 16.3ms | Allocations: 3852)
+I, [2023-09-08T11:00:01.989885 #251]  INFO -- : [34b3ee6d-9ed8-412b-9c27-65c62fb82f88]   Rendered layout layouts/base.html.erb (Duration: 64.0ms | Allocations: 12592)
+I, [2023-09-08T11:00:01.990595 #251]  INFO -- : [34b3ee6d-9ed8-412b-9c27-65c62fb82f88] Completed 200 OK in 453ms (Views: 54.7ms | ActiveRecord: 48.8ms | Allocations: 78172)
+I, [2023-09-08T11:00:04.987820 #251]  INFO -- : [f0e32cf6-54a7-42c7-a1e4-682f89741fdc] Started GET "/login" for 172.16.0.20 at 2023-09-08 11:00:04 +0000
+I, [2023-09-08T11:00:04.988973 #251]  INFO -- : [f0e32cf6-54a7-42c7-a1e4-682f89741fdc] Processing by AccountController#login as HTML
+I, [2023-09-08T11:00:04.995857 #251]  INFO -- : [f0e32cf6-54a7-42c7-a1e4-682f89741fdc]   Current user: anonymous
+I, [2023-09-08T11:00:05.005868 #251]  INFO -- : [f0e32cf6-54a7-42c7-a1e4-682f89741fdc]   Rendered account/login.html.erb within layouts/base (Duration: 7.8ms | Allocations: 1306)
+I, [2023-09-08T11:00:05.027171 #251]  INFO -- : [f0e32cf6-54a7-42c7-a1e4-682f89741fdc]   Rendered layout layouts/base.html.erb (Duration: 29.1ms | Allocations: 5740)
+I, [2023-09-08T11:00:05.027621 #251]  INFO -- : [f0e32cf6-54a7-42c7-a1e4-682f89741fdc] Completed 200 OK in 38ms (Views: 23.2ms | ActiveRecord: 9.6ms | Allocations: 6967)
+I, [2023-09-08T11:00:10.135935 #251]  INFO -- : [a3482b67-22d6-46a8-a4e3-79ab9df482b0] Started POST "/login" for 172.16.0.20 at 2023-09-08 11:00:10 +0000
+I, [2023-09-08T11:00:10.137126 #251]  INFO -- : [a3482b67-22d6-46a8-a4e3-79ab9df482b0] Processing by AccountController#login as HTML
+I, [2023-09-08T11:00:10.137262 #251]  INFO -- : [a3482b67-22d6-46a8-a4e3-79ab9df482b0]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"pfXfJx7SGF5LmuJQ03FreLV3UGMyHwr3VtQMXhevwlxrzNcJTNUjXr1GjZJkuhq1SXTBxBuAkFSaTDJS/1M0fw==", "back_url"=>"/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+I, [2023-09-08T11:00:10.143536 #251]  INFO -- : [a3482b67-22d6-46a8-a4e3-79ab9df482b0]   Current user: anonymous
+I, [2023-09-08T11:00:10.151722 #251]  INFO -- : [a3482b67-22d6-46a8-a4e3-79ab9df482b0] Successful authentication for 'admin' from 172.16.0.20 at 2023-09-08 11:00:10 UTC
+I, [2023-09-08T11:00:10.194950 #251]  INFO -- : [a3482b67-22d6-46a8-a4e3-79ab9df482b0] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T11:00:10.195251 #251]  INFO -- : [a3482b67-22d6-46a8-a4e3-79ab9df482b0] Completed 302 Found in 58ms (ActiveRecord: 21.5ms | Allocations: 6848)
+I, [2023-09-08T11:00:10.238207 #253]  INFO -- : [4f772ba9-7c5a-488c-942f-f18b281aa9fe] Started GET "/" for 172.16.0.20 at 2023-09-08 11:00:10 +0000
+I, [2023-09-08T11:00:10.242451 #253]  INFO -- : [4f772ba9-7c5a-488c-942f-f18b281aa9fe] Processing by WelcomeController#index as HTML
+I, [2023-09-08T11:00:10.464731 #253]  INFO -- : [4f772ba9-7c5a-488c-942f-f18b281aa9fe]   Current user: admin (id=1)
+I, [2023-09-08T11:00:10.592795 #253]  INFO -- : [4f772ba9-7c5a-488c-942f-f18b281aa9fe]   Rendered welcome/index.html.erb within layouts/base (Duration: 58.9ms | Allocations: 12007)
+I, [2023-09-08T11:00:10.627058 #253]  INFO -- : [4f772ba9-7c5a-488c-942f-f18b281aa9fe]   Rendered layout layouts/base.html.erb (Duration: 93.5ms | Allocations: 19069)
+I, [2023-09-08T11:00:10.627775 #253]  INFO -- : [4f772ba9-7c5a-488c-942f-f18b281aa9fe] Completed 200 OK in 385ms (Views: 79.5ms | ActiveRecord: 47.9ms | Allocations: 56159)
+I, [2023-09-08T11:00:14.429510 #251]  INFO -- : [d353e011-6528-494a-b83f-4714ea6b00c7] Started GET "/news/10" for 172.16.0.20 at 2023-09-08 11:00:14 +0000
+I, [2023-09-08T11:00:14.430758 #251]  INFO -- : [d353e011-6528-494a-b83f-4714ea6b00c7] Processing by NewsController#show as HTML
+I, [2023-09-08T11:00:14.430845 #251]  INFO -- : [d353e011-6528-494a-b83f-4714ea6b00c7]   Parameters: {"id"=>"10"}
+I, [2023-09-08T11:00:14.443137 #251]  INFO -- : [d353e011-6528-494a-b83f-4714ea6b00c7]   Current user: admin (id=1)
+I, [2023-09-08T11:00:14.604148 #251]  INFO -- : [d353e011-6528-494a-b83f-4714ea6b00c7]   Rendered news/show.html.erb within layouts/base (Duration: 96.0ms | Allocations: 11035)
+I, [2023-09-08T11:00:14.686359 #251]  INFO -- : [d353e011-6528-494a-b83f-4714ea6b00c7]   Rendered layout layouts/base.html.erb (Duration: 178.3ms | Allocations: 25778)
+I, [2023-09-08T11:00:14.697397 #251]  INFO -- : [d353e011-6528-494a-b83f-4714ea6b00c7] Completed 200 OK in 266ms (Views: 136.8ms | ActiveRecord: 65.1ms | Allocations: 41918)
+I, [2023-09-08T11:00:17.677961 #251]  INFO -- : [06e35c3e-e689-432b-a9b7-aaf9f03900be] Started GET "/projects/bubble-spa/documents" for 172.16.0.20 at 2023-09-08 11:00:17 +0000
+I, [2023-09-08T11:00:17.679142 #251]  INFO -- : [06e35c3e-e689-432b-a9b7-aaf9f03900be] Processing by DocumentsController#index as HTML
+I, [2023-09-08T11:00:17.679228 #251]  INFO -- : [06e35c3e-e689-432b-a9b7-aaf9f03900be]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T11:00:17.688271 #251]  INFO -- : [06e35c3e-e689-432b-a9b7-aaf9f03900be]   Current user: admin (id=1)
+I, [2023-09-08T11:00:17.837860 #251]  INFO -- : [06e35c3e-e689-432b-a9b7-aaf9f03900be]   Rendered documents/index.html.erb within layouts/base (Duration: 58.0ms | Allocations: 8072)
+I, [2023-09-08T11:00:17.878590 #251]  INFO -- : [06e35c3e-e689-432b-a9b7-aaf9f03900be]   Rendered layout layouts/base.html.erb (Duration: 98.9ms | Allocations: 17045)
+I, [2023-09-08T11:00:17.879154 #251]  INFO -- : [06e35c3e-e689-432b-a9b7-aaf9f03900be] Completed 200 OK in 200ms (Views: 82.0ms | ActiveRecord: 40.3ms | Allocations: 36315)
+I, [2023-09-08T11:00:19.235819 #253]  INFO -- : [aaebeefe-92c7-47a4-98d5-e6ac2a90b816] Started GET "/projects/bubble-spa/wiki" for 172.16.0.20 at 2023-09-08 11:00:19 +0000
+I, [2023-09-08T11:00:19.237134 #253]  INFO -- : [aaebeefe-92c7-47a4-98d5-e6ac2a90b816] Processing by WikiController#show as HTML
+I, [2023-09-08T11:00:19.237242 #253]  INFO -- : [aaebeefe-92c7-47a4-98d5-e6ac2a90b816]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T11:00:19.245857 #253]  INFO -- : [aaebeefe-92c7-47a4-98d5-e6ac2a90b816]   Current user: admin (id=1)
+I, [2023-09-08T11:00:19.513474 #253]  INFO -- : [aaebeefe-92c7-47a4-98d5-e6ac2a90b816]   Rendered wiki/show.html.erb within layouts/base (Duration: 199.8ms | Allocations: 29308)
+I, [2023-09-08T11:00:19.575746 #253]  INFO -- : [aaebeefe-92c7-47a4-98d5-e6ac2a90b816]   Rendered layout layouts/base.html.erb (Duration: 262.1ms | Allocations: 41850)
+I, [2023-09-08T11:00:19.576351 #253]  INFO -- : [aaebeefe-92c7-47a4-98d5-e6ac2a90b816] Completed 200 OK in 339ms (Views: 218.1ms | ActiveRecord: 68.1ms | Allocations: 54789)
+I, [2023-09-08T11:00:21.286341 #251]  INFO -- : [5e648f3b-7049-49ae-9614-4cefe5115d48] Started GET "/projects/bubble-spa" for 172.16.0.20 at 2023-09-08 11:00:21 +0000
+I, [2023-09-08T11:00:21.287591 #251]  INFO -- : [5e648f3b-7049-49ae-9614-4cefe5115d48] Processing by ProjectsController#show as HTML
+I, [2023-09-08T11:00:21.287719 #251]  INFO -- : [5e648f3b-7049-49ae-9614-4cefe5115d48]   Parameters: {"id"=>"bubble-spa"}
+I, [2023-09-08T11:00:21.296388 #251]  INFO -- : [5e648f3b-7049-49ae-9614-4cefe5115d48]   Current user: admin (id=1)
+I, [2023-09-08T11:00:21.557250 #251]  INFO -- : [5e648f3b-7049-49ae-9614-4cefe5115d48]   Rendered projects/show.html.erb within layouts/base (Duration: 72.0ms | Allocations: 13723)
+I, [2023-09-08T11:00:21.594475 #251]  INFO -- : [5e648f3b-7049-49ae-9614-4cefe5115d48]   Rendered layout layouts/base.html.erb (Duration: 109.2ms | Allocations: 22717)
+I, [2023-09-08T11:00:21.595051 #251]  INFO -- : [5e648f3b-7049-49ae-9614-4cefe5115d48] Completed 200 OK in 307ms (Views: 95.4ms | ActiveRecord: 143.1ms | Allocations: 40637)
+I, [2023-09-08T11:00:23.725315 #253]  INFO -- : [864d0258-adce-4821-b393-12d474239875] Started GET "/admin" for 172.16.0.20 at 2023-09-08 11:00:23 +0000
+I, [2023-09-08T11:00:23.726685 #253]  INFO -- : [864d0258-adce-4821-b393-12d474239875] Processing by AdminController#index as HTML
+I, [2023-09-08T11:00:23.735670 #253]  INFO -- : [864d0258-adce-4821-b393-12d474239875]   Current user: admin (id=1)
+I, [2023-09-08T11:00:23.746969 #253]  INFO -- : [864d0258-adce-4821-b393-12d474239875]   Rendered admin/index.html.erb within layouts/admin (Duration: 6.9ms | Allocations: 2065)
+I, [2023-09-08T11:00:23.766766 #253]  INFO -- : [864d0258-adce-4821-b393-12d474239875]   Rendered layouts/base.html.erb (Duration: 18.8ms | Allocations: 4660)
+I, [2023-09-08T11:00:23.766942 #253]  INFO -- : [864d0258-adce-4821-b393-12d474239875]   Rendered layout layouts/admin.html.erb (Duration: 26.9ms | Allocations: 6980)
+I, [2023-09-08T11:00:23.767319 #253]  INFO -- : [864d0258-adce-4821-b393-12d474239875] Completed 200 OK in 40ms (Views: 24.8ms | ActiveRecord: 8.3ms | Allocations: 8716)
+I, [2023-09-08T11:00:25.362472 #251]  INFO -- : [58d0c660-9a2a-40fd-a6da-dc6fd44b19cf] Started GET "/admin/plugins" for 172.16.0.20 at 2023-09-08 11:00:25 +0000
+I, [2023-09-08T11:00:25.363710 #251]  INFO -- : [58d0c660-9a2a-40fd-a6da-dc6fd44b19cf] Processing by AdminController#plugins as HTML
+I, [2023-09-08T11:00:25.372769 #251]  INFO -- : [58d0c660-9a2a-40fd-a6da-dc6fd44b19cf]   Current user: admin (id=1)
+I, [2023-09-08T11:00:25.377937 #251]  INFO -- : [58d0c660-9a2a-40fd-a6da-dc6fd44b19cf]   Rendered admin/plugins.html.erb within layouts/admin (Duration: 2.1ms | Allocations: 513)
+I, [2023-09-08T11:00:25.407115 #251]  INFO -- : [58d0c660-9a2a-40fd-a6da-dc6fd44b19cf]   Rendered layouts/base.html.erb (Duration: 21.5ms | Allocations: 4647)
+I, [2023-09-08T11:00:25.407293 #251]  INFO -- : [58d0c660-9a2a-40fd-a6da-dc6fd44b19cf]   Rendered layout layouts/admin.html.erb (Duration: 31.7ms | Allocations: 7328)
+I, [2023-09-08T11:00:25.407725 #251]  INFO -- : [58d0c660-9a2a-40fd-a6da-dc6fd44b19cf] Completed 200 OK in 44ms (Views: 29.5ms | ActiveRecord: 7.4ms | Allocations: 8904)
+I, [2023-09-08T11:00:26.522554 #251]  INFO -- : [580f39ff-5bfe-4fd7-86c1-34a6d50b0fe8] Started GET "/admin" for 172.16.0.20 at 2023-09-08 11:00:26 +0000
+I, [2023-09-08T11:00:26.523569 #251]  INFO -- : [580f39ff-5bfe-4fd7-86c1-34a6d50b0fe8] Processing by AdminController#index as HTML
+I, [2023-09-08T11:00:26.532420 #251]  INFO -- : [580f39ff-5bfe-4fd7-86c1-34a6d50b0fe8]   Current user: admin (id=1)
+I, [2023-09-08T11:00:26.540915 #251]  INFO -- : [580f39ff-5bfe-4fd7-86c1-34a6d50b0fe8]   Rendered admin/index.html.erb within layouts/admin (Duration: 5.0ms | Allocations: 1760)
+I, [2023-09-08T11:00:26.559215 #251]  INFO -- : [580f39ff-5bfe-4fd7-86c1-34a6d50b0fe8]   Rendered layouts/base.html.erb (Duration: 18.0ms | Allocations: 4642)
+I, [2023-09-08T11:00:26.559365 #251]  INFO -- : [580f39ff-5bfe-4fd7-86c1-34a6d50b0fe8]   Rendered layout layouts/admin.html.erb (Duration: 23.5ms | Allocations: 6489)
+I, [2023-09-08T11:00:26.559755 #251]  INFO -- : [580f39ff-5bfe-4fd7-86c1-34a6d50b0fe8] Completed 200 OK in 36ms (Views: 20.2ms | ActiveRecord: 8.5ms | Allocations: 7863)
+I, [2023-09-08T11:00:27.666344 #251]  INFO -- : [0d2316e2-64ba-477a-8215-370788c6d9cd] Started GET "/admin/info" for 172.16.0.20 at 2023-09-08 11:00:27 +0000
+I, [2023-09-08T11:00:27.667332 #251]  INFO -- : [0d2316e2-64ba-477a-8215-370788c6d9cd] Processing by AdminController#info as HTML
+I, [2023-09-08T11:00:27.675566 #251]  INFO -- : [0d2316e2-64ba-477a-8215-370788c6d9cd]   Current user: admin (id=1)
+I, [2023-09-08T11:00:29.651550 #251]  INFO -- : [0d2316e2-64ba-477a-8215-370788c6d9cd]   Rendered admin/info.html.erb within layouts/admin (Duration: 1423.5ms | Allocations: 751)
+I, [2023-09-08T11:00:29.675883 #251]  INFO -- : [0d2316e2-64ba-477a-8215-370788c6d9cd]   Rendered layouts/base.html.erb (Duration: 19.4ms | Allocations: 4642)
+I, [2023-09-08T11:00:29.676084 #251]  INFO -- : [0d2316e2-64ba-477a-8215-370788c6d9cd]   Rendered layout layouts/admin.html.erb (Duration: 1448.1ms | Allocations: 7092)
+I, [2023-09-08T11:00:29.676429 #251]  INFO -- : [0d2316e2-64ba-477a-8215-370788c6d9cd] Completed 200 OK in 2009ms (Views: 1444.0ms | ActiveRecord: 13.5ms | Allocations: 23379)
+I, [2023-09-08T11:00:45.190506 #251]  INFO -- : [e7692605-b01e-4c26-9be6-94cc894220e0] Started GET "/projects" for 172.16.0.20 at 2023-09-08 11:00:45 +0000
+I, [2023-09-08T11:00:45.191512 #251]  INFO -- : [e7692605-b01e-4c26-9be6-94cc894220e0] Processing by ProjectsController#index as HTML
+I, [2023-09-08T11:00:45.200255 #251]  INFO -- : [e7692605-b01e-4c26-9be6-94cc894220e0]   Current user: admin (id=1)
+I, [2023-09-08T11:00:45.622063 #251]  INFO -- : [e7692605-b01e-4c26-9be6-94cc894220e0]   Rendered projects/index.html.erb within layouts/base (Duration: 346.7ms | Allocations: 117271)
+I, [2023-09-08T11:00:45.649901 #251]  INFO -- : [e7692605-b01e-4c26-9be6-94cc894220e0]   Rendered layout layouts/base.html.erb (Duration: 374.6ms | Allocations: 123419)
+I, [2023-09-08T11:00:45.650276 #251]  INFO -- : [e7692605-b01e-4c26-9be6-94cc894220e0] Completed 200 OK in 459ms (Views: 360.8ms | ActiveRecord: 34.0ms | Allocations: 141494)
+I, [2023-09-08T11:00:51.133052 #251]  INFO -- : [faf086b5-7cee-48b5-9bb3-e8d9ecf1aaf1] Started GET "/projects/iptv" for 172.16.0.20 at 2023-09-08 11:00:51 +0000
+I, [2023-09-08T11:00:51.134064 #251]  INFO -- : [faf086b5-7cee-48b5-9bb3-e8d9ecf1aaf1] Processing by ProjectsController#show as HTML
+I, [2023-09-08T11:00:51.134168 #251]  INFO -- : [faf086b5-7cee-48b5-9bb3-e8d9ecf1aaf1]   Parameters: {"id"=>"iptv"}
+I, [2023-09-08T11:00:51.142141 #251]  INFO -- : [faf086b5-7cee-48b5-9bb3-e8d9ecf1aaf1]   Current user: admin (id=1)
+I, [2023-09-08T11:00:51.236541 #251]  INFO -- : [faf086b5-7cee-48b5-9bb3-e8d9ecf1aaf1]   Rendered projects/show.html.erb within layouts/base (Duration: 22.6ms | Allocations: 6359)
+I, [2023-09-08T11:00:51.274680 #251]  INFO -- : [faf086b5-7cee-48b5-9bb3-e8d9ecf1aaf1]   Rendered layout layouts/base.html.erb (Duration: 60.7ms | Allocations: 15380)
+I, [2023-09-08T11:00:51.283884 #251]  INFO -- : [faf086b5-7cee-48b5-9bb3-e8d9ecf1aaf1] Completed 200 OK in 150ms (Views: 46.7ms | ActiveRecord: 75.2ms | Allocations: 22461)
+I, [2023-09-08T11:00:55.919866 #251]  INFO -- : [fec69628-ddee-419f-9b17-7aada8cb631c] Started GET "/projects/iptv/wiki" for 172.16.0.20 at 2023-09-08 11:00:55 +0000
+I, [2023-09-08T11:00:55.921220 #251]  INFO -- : [fec69628-ddee-419f-9b17-7aada8cb631c] Processing by WikiController#show as HTML
+I, [2023-09-08T11:00:55.921328 #251]  INFO -- : [fec69628-ddee-419f-9b17-7aada8cb631c]   Parameters: {"project_id"=>"iptv"}
+I, [2023-09-08T11:00:55.930132 #251]  INFO -- : [fec69628-ddee-419f-9b17-7aada8cb631c]   Current user: admin (id=1)
+I, [2023-09-08T11:00:56.023413 #251]  INFO -- : [fec69628-ddee-419f-9b17-7aada8cb631c]   Rendered wiki/edit.html.erb within layouts/base (Duration: 46.5ms | Allocations: 4831)
+I, [2023-09-08T11:00:56.060244 #251]  INFO -- : [fec69628-ddee-419f-9b17-7aada8cb631c]   Rendered layout layouts/base.html.erb (Duration: 83.4ms | Allocations: 13683)
+I, [2023-09-08T11:00:56.060867 #251]  INFO -- : [fec69628-ddee-419f-9b17-7aada8cb631c] Completed 200 OK in 139ms (Views: 72.8ms | ActiveRecord: 29.5ms | Allocations: 23168)
+I, [2023-09-08T11:00:57.807057 #253]  INFO -- : [d3a12f8c-d0cf-4afd-b003-36aabed56ae6] Started GET "/projects/iptv/documents" for 172.16.0.20 at 2023-09-08 11:00:57 +0000
+I, [2023-09-08T11:00:57.808547 #253]  INFO -- : [d3a12f8c-d0cf-4afd-b003-36aabed56ae6] Processing by DocumentsController#index as HTML
+I, [2023-09-08T11:00:57.808667 #253]  INFO -- : [d3a12f8c-d0cf-4afd-b003-36aabed56ae6]   Parameters: {"project_id"=>"iptv"}
+I, [2023-09-08T11:00:57.818006 #253]  INFO -- : [d3a12f8c-d0cf-4afd-b003-36aabed56ae6]   Current user: admin (id=1)
+I, [2023-09-08T11:00:57.937588 #253]  INFO -- : [d3a12f8c-d0cf-4afd-b003-36aabed56ae6]   Rendered documents/index.html.erb within layouts/base (Duration: 56.4ms | Allocations: 7277)
+I, [2023-09-08T11:00:57.980330 #253]  INFO -- : [d3a12f8c-d0cf-4afd-b003-36aabed56ae6]   Rendered layout layouts/base.html.erb (Duration: 99.2ms | Allocations: 16512)
+I, [2023-09-08T11:00:57.980925 #253]  INFO -- : [d3a12f8c-d0cf-4afd-b003-36aabed56ae6] Completed 200 OK in 172ms (Views: 82.2ms | ActiveRecord: 34.7ms | Allocations: 29712)
+I, [2023-09-08T11:00:59.188911 #253]  INFO -- : [5e4c79ed-9b9d-4c02-809c-f0ccf522c18e] Started GET "/projects/iptv" for 172.16.0.20 at 2023-09-08 11:00:59 +0000
+I, [2023-09-08T11:00:59.190186 #253]  INFO -- : [5e4c79ed-9b9d-4c02-809c-f0ccf522c18e] Processing by ProjectsController#show as HTML
+I, [2023-09-08T11:00:59.190273 #253]  INFO -- : [5e4c79ed-9b9d-4c02-809c-f0ccf522c18e]   Parameters: {"id"=>"iptv"}
+I, [2023-09-08T11:00:59.199525 #253]  INFO -- : [5e4c79ed-9b9d-4c02-809c-f0ccf522c18e]   Current user: admin (id=1)
+I, [2023-09-08T11:00:59.333806 #253]  INFO -- : [5e4c79ed-9b9d-4c02-809c-f0ccf522c18e]   Rendered projects/show.html.erb within layouts/base (Duration: 43.2ms | Allocations: 11106)
+I, [2023-09-08T11:00:59.372950 #253]  INFO -- : [5e4c79ed-9b9d-4c02-809c-f0ccf522c18e]   Rendered layout layouts/base.html.erb (Duration: 82.4ms | Allocations: 20180)
+I, [2023-09-08T11:00:59.373471 #253]  INFO -- : [5e4c79ed-9b9d-4c02-809c-f0ccf522c18e] Completed 200 OK in 183ms (Views: 67.4ms | ActiveRecord: 78.8ms | Allocations: 29610)
+I, [2023-09-08T11:01:00.315459 #253]  INFO -- : [fab228e6-1c37-434d-94e9-dd08a703371c] Started GET "/projects/iptv/activity" for 172.16.0.20 at 2023-09-08 11:01:00 +0000
+I, [2023-09-08T11:01:00.316789 #253]  INFO -- : [fab228e6-1c37-434d-94e9-dd08a703371c] Processing by ActivitiesController#index as HTML
+I, [2023-09-08T11:01:00.316882 #253]  INFO -- : [fab228e6-1c37-434d-94e9-dd08a703371c]   Parameters: {"id"=>"iptv"}
+I, [2023-09-08T11:01:00.326004 #253]  INFO -- : [fab228e6-1c37-434d-94e9-dd08a703371c]   Current user: admin (id=1)
+I, [2023-09-08T11:01:00.496482 #253]  INFO -- : [fab228e6-1c37-434d-94e9-dd08a703371c]   Rendered activities/index.html.erb within layouts/base (Duration: 76.9ms | Allocations: 9898)
+I, [2023-09-08T11:01:00.535837 #253]  INFO -- : [fab228e6-1c37-434d-94e9-dd08a703371c]   Rendered layout layouts/base.html.erb (Duration: 116.3ms | Allocations: 18972)
+I, [2023-09-08T11:01:00.536380 #253]  INFO -- : [fab228e6-1c37-434d-94e9-dd08a703371c] Completed 200 OK in 219ms (Views: 100.1ms | ActiveRecord: 89.6ms | Allocations: 25069)
+I, [2023-09-08T11:01:02.585289 #253]  INFO -- : [14f0d7c1-0c4c-413a-862e-b05d2b0ba56d] Started GET "/projects/iptv" for 172.16.0.20 at 2023-09-08 11:01:02 +0000
+I, [2023-09-08T11:01:02.586424 #253]  INFO -- : [14f0d7c1-0c4c-413a-862e-b05d2b0ba56d] Processing by ProjectsController#show as HTML
+I, [2023-09-08T11:01:02.586541 #253]  INFO -- : [14f0d7c1-0c4c-413a-862e-b05d2b0ba56d]   Parameters: {"id"=>"iptv"}
+I, [2023-09-08T11:01:02.595017 #253]  INFO -- : [14f0d7c1-0c4c-413a-862e-b05d2b0ba56d]   Current user: admin (id=1)
+I, [2023-09-08T11:01:02.687304 #253]  INFO -- : [14f0d7c1-0c4c-413a-862e-b05d2b0ba56d]   Rendered projects/show.html.erb within layouts/base (Duration: 23.9ms | Allocations: 6359)
+I, [2023-09-08T11:01:02.729932 #253]  INFO -- : [14f0d7c1-0c4c-413a-862e-b05d2b0ba56d]   Rendered layout layouts/base.html.erb (Duration: 66.6ms | Allocations: 15428)
+I, [2023-09-08T11:01:02.730406 #253]  INFO -- : [14f0d7c1-0c4c-413a-862e-b05d2b0ba56d] Completed 200 OK in 144ms (Views: 51.0ms | ActiveRecord: 70.3ms | Allocations: 21216)
+I, [2023-09-08T11:01:38.279927 #253]  INFO -- : [3b68f9b1-c877-4a30-8007-2024ddd7997d] Started POST "/logout" for 172.16.0.20 at 2023-09-08 11:01:38 +0000
+I, [2023-09-08T11:01:38.281176 #253]  INFO -- : [3b68f9b1-c877-4a30-8007-2024ddd7997d] Processing by AccountController#logout as HTML
+I, [2023-09-08T11:01:38.281267 #253]  INFO -- : [3b68f9b1-c877-4a30-8007-2024ddd7997d]   Parameters: {"authenticity_token"=>"xRsmwtN60KnWKeoEO7Lh3O20uiSr61tFX5xWSwQu0CJA/2WJ+Hrztt1SiaoIDNtQbd+SYwj4i0n/Lxi5WfGxqA=="}
+I, [2023-09-08T11:01:38.294738 #253]  INFO -- : [3b68f9b1-c877-4a30-8007-2024ddd7997d]   Current user: admin (id=1)
+I, [2023-09-08T11:01:38.334313 #253]  INFO -- : [3b68f9b1-c877-4a30-8007-2024ddd7997d] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T11:01:38.334585 #253]  INFO -- : [3b68f9b1-c877-4a30-8007-2024ddd7997d] Completed 302 Found in 53ms (ActiveRecord: 10.0ms | Allocations: 9749)
+I, [2023-09-08T11:01:38.356810 #251]  INFO -- : [7e8d9113-7ee4-455c-9bd4-4806cc38120d] Started GET "/" for 172.16.0.20 at 2023-09-08 11:01:38 +0000
+I, [2023-09-08T11:01:38.357839 #251]  INFO -- : [7e8d9113-7ee4-455c-9bd4-4806cc38120d] Processing by WelcomeController#index as HTML
+I, [2023-09-08T11:01:38.363796 #251]  INFO -- : [7e8d9113-7ee4-455c-9bd4-4806cc38120d]   Current user: anonymous
+I, [2023-09-08T11:01:38.377180 #251]  INFO -- : [7e8d9113-7ee4-455c-9bd4-4806cc38120d]   Rendered welcome/index.html.erb within layouts/base (Duration: 1.1ms | Allocations: 371)
+I, [2023-09-08T11:01:38.389475 #251]  INFO -- : [7e8d9113-7ee4-455c-9bd4-4806cc38120d]   Rendered layout layouts/base.html.erb (Duration: 13.4ms | Allocations: 4058)
+I, [2023-09-08T11:01:38.389910 #251]  INFO -- : [7e8d9113-7ee4-455c-9bd4-4806cc38120d] Completed 200 OK in 32ms (Views: 14.1ms | ActiveRecord: 8.3ms | Allocations: 6093)
+I, [2023-09-08T11:01:40.590721 #251]  INFO -- : [ae353d14-9e6d-4b74-ac02-bdc87b2f96d2] Started GET "/login" for 172.16.0.20 at 2023-09-08 11:01:40 +0000
+I, [2023-09-08T11:01:40.591692 #251]  INFO -- : [ae353d14-9e6d-4b74-ac02-bdc87b2f96d2] Processing by AccountController#login as HTML
+I, [2023-09-08T11:01:40.598098 #251]  INFO -- : [ae353d14-9e6d-4b74-ac02-bdc87b2f96d2]   Current user: anonymous
+I, [2023-09-08T11:01:40.600704 #251]  INFO -- : [ae353d14-9e6d-4b74-ac02-bdc87b2f96d2]   Rendered account/login.html.erb within layouts/base (Duration: 1.5ms | Allocations: 520)
+I, [2023-09-08T11:01:40.620047 #251]  INFO -- : [ae353d14-9e6d-4b74-ac02-bdc87b2f96d2]   Rendered layout layouts/base.html.erb (Duration: 20.9ms | Allocations: 4947)
+I, [2023-09-08T11:01:40.620417 #251]  INFO -- : [ae353d14-9e6d-4b74-ac02-bdc87b2f96d2] Completed 200 OK in 29ms (Views: 17.0ms | ActiveRecord: 7.4ms | Allocations: 5795)
+I, [2023-09-08T11:01:42.998545 #253]  INFO -- : [8742a04f-b5f8-488d-9df2-56e49ec8a0a2] Started POST "/login" for 172.16.0.20 at 2023-09-08 11:01:42 +0000
+I, [2023-09-08T11:01:42.999777 #253]  INFO -- : [8742a04f-b5f8-488d-9df2-56e49ec8a0a2] Processing by AccountController#login as HTML
+I, [2023-09-08T11:01:42.999879 #253]  INFO -- : [8742a04f-b5f8-488d-9df2-56e49ec8a0a2]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"1t0MTqM+PKHuGbfG0TKBP4xgTniW8YkjTfZEUr/TLkD0nqj6Nm7AkOAyDwLp9bYrVRfWP13lNrILk3dQwo2Mng==", "back_url"=>"/", "username"=>"anhdh", "password"=>"[FILTERED]", "login"=>"Login"}
+I, [2023-09-08T11:01:43.008711 #253]  INFO -- : [8742a04f-b5f8-488d-9df2-56e49ec8a0a2]   Current user: anonymous
+I, [2023-09-08T11:01:43.089546 #253]  INFO -- : [8742a04f-b5f8-488d-9df2-56e49ec8a0a2] Successful authentication for 'anhdh' from 172.16.0.20 at 2023-09-08 11:01:43 UTC
+I, [2023-09-08T11:01:43.121600 #253]  INFO -- : [8742a04f-b5f8-488d-9df2-56e49ec8a0a2] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T11:01:43.121909 #253]  INFO -- : [8742a04f-b5f8-488d-9df2-56e49ec8a0a2] Completed 302 Found in 122ms (ActiveRecord: 28.1ms | Allocations: 20799)
+I, [2023-09-08T11:01:43.153602 #253]  INFO -- : [35faa31e-afa3-4725-ba5a-a6c7234789f0] Started GET "/" for 172.16.0.20 at 2023-09-08 11:01:43 +0000
+I, [2023-09-08T11:01:43.154545 #253]  INFO -- : [35faa31e-afa3-4725-ba5a-a6c7234789f0] Processing by WelcomeController#index as HTML
+I, [2023-09-08T11:01:43.162339 #253]  INFO -- : [35faa31e-afa3-4725-ba5a-a6c7234789f0]   Current user: anhdh (id=495)
+I, [2023-09-08T11:01:43.296867 #253]  INFO -- : [35faa31e-afa3-4725-ba5a-a6c7234789f0]   Rendered welcome/index.html.erb within layouts/base (Duration: 13.4ms | Allocations: 2696)
+I, [2023-09-08T11:01:43.318151 #253]  INFO -- : [35faa31e-afa3-4725-ba5a-a6c7234789f0]   Rendered layout layouts/base.html.erb (Duration: 34.7ms | Allocations: 8283)
+I, [2023-09-08T11:01:43.318586 #253]  INFO -- : [35faa31e-afa3-4725-ba5a-a6c7234789f0] Completed 200 OK in 164ms (Views: 29.4ms | ActiveRecord: 20.1ms | Allocations: 35795)
+I, [2023-09-08T11:02:02.217674 #251]  INFO -- : [b3fd7ced-b2cf-414a-b615-211d2a004f07] Started GET "/projects" for 172.16.0.20 at 2023-09-08 11:02:02 +0000
+I, [2023-09-08T11:02:02.218968 #251]  INFO -- : [b3fd7ced-b2cf-414a-b615-211d2a004f07] Processing by ProjectsController#index as HTML
+I, [2023-09-08T11:02:02.227954 #251]  INFO -- : [b3fd7ced-b2cf-414a-b615-211d2a004f07]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:02.334215 #251]  INFO -- : [b3fd7ced-b2cf-414a-b615-211d2a004f07]   Rendered projects/index.html.erb within layouts/base (Duration: 37.7ms | Allocations: 10466)
+I, [2023-09-08T11:02:02.376835 #251]  INFO -- : [b3fd7ced-b2cf-414a-b615-211d2a004f07]   Rendered layout layouts/base.html.erb (Duration: 80.4ms | Allocations: 18478)
+I, [2023-09-08T11:02:02.377272 #251]  INFO -- : [b3fd7ced-b2cf-414a-b615-211d2a004f07] Completed 200 OK in 158ms (Views: 59.5ms | ActiveRecord: 38.8ms | Allocations: 32019)
+I, [2023-09-08T11:02:12.041982 #253]  INFO -- : [33f6eefb-cc8b-481c-b2bc-f12668e5ca77] Started GET "/projects/nexle-it-project" for 172.16.0.20 at 2023-09-08 11:02:12 +0000
+I, [2023-09-08T11:02:12.043310 #253]  INFO -- : [33f6eefb-cc8b-481c-b2bc-f12668e5ca77] Processing by ProjectsController#show as HTML
+I, [2023-09-08T11:02:12.043417 #253]  INFO -- : [33f6eefb-cc8b-481c-b2bc-f12668e5ca77]   Parameters: {"id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:12.051882 #253]  INFO -- : [33f6eefb-cc8b-481c-b2bc-f12668e5ca77]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:12.217772 #253]  INFO -- : [33f6eefb-cc8b-481c-b2bc-f12668e5ca77]   Rendered projects/show.html.erb within layouts/base (Duration: 23.4ms | Allocations: 5430)
+I, [2023-09-08T11:02:12.253621 #253]  INFO -- : [33f6eefb-cc8b-481c-b2bc-f12668e5ca77]   Rendered layout layouts/base.html.erb (Duration: 59.3ms | Allocations: 13803)
+I, [2023-09-08T11:02:12.254255 #253]  INFO -- : [33f6eefb-cc8b-481c-b2bc-f12668e5ca77] Completed 200 OK in 211ms (Views: 47.3ms | ActiveRecord: 104.7ms | Allocations: 28960)
+I, [2023-09-08T11:02:14.519360 #253]  INFO -- : [ca104730-3a3f-42aa-953e-7d9b3e55b06f] Started GET "/projects/nexle-it-project/activity" for 172.16.0.20 at 2023-09-08 11:02:14 +0000
+I, [2023-09-08T11:02:14.520432 #253]  INFO -- : [ca104730-3a3f-42aa-953e-7d9b3e55b06f] Processing by ActivitiesController#index as HTML
+I, [2023-09-08T11:02:14.520524 #253]  INFO -- : [ca104730-3a3f-42aa-953e-7d9b3e55b06f]   Parameters: {"id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:14.528817 #253]  INFO -- : [ca104730-3a3f-42aa-953e-7d9b3e55b06f]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:15.151796 #253]  INFO -- : [ca104730-3a3f-42aa-953e-7d9b3e55b06f]   Rendered activities/index.html.erb within layouts/base (Duration: 531.6ms | Allocations: 109789)
+I, [2023-09-08T11:02:15.186193 #253]  INFO -- : [ca104730-3a3f-42aa-953e-7d9b3e55b06f]   Rendered layout layouts/base.html.erb (Duration: 566.1ms | Allocations: 118008)
+I, [2023-09-08T11:02:15.186818 #253]  INFO -- : [ca104730-3a3f-42aa-953e-7d9b3e55b06f] Completed 200 OK in 666ms (Views: 500.2ms | ActiveRecord: 93.3ms | Allocations: 132447)
+I, [2023-09-08T11:02:17.203883 #251]  INFO -- : [e2d89652-d42a-4c53-86df-789d61e3c736] Started GET "/projects/nexle-it-project/documents" for 172.16.0.20 at 2023-09-08 11:02:17 +0000
+I, [2023-09-08T11:02:17.204967 #251]  INFO -- : [e2d89652-d42a-4c53-86df-789d61e3c736] Processing by DocumentsController#index as HTML
+I, [2023-09-08T11:02:17.205063 #251]  INFO -- : [e2d89652-d42a-4c53-86df-789d61e3c736]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:17.213222 #251]  INFO -- : [e2d89652-d42a-4c53-86df-789d61e3c736]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:17.260284 #251]  INFO -- : [e2d89652-d42a-4c53-86df-789d61e3c736]   Rendered documents/index.html.erb within layouts/base (Duration: 18.3ms | Allocations: 4460)
+I, [2023-09-08T11:02:17.304785 #251]  INFO -- : [e2d89652-d42a-4c53-86df-789d61e3c736]   Rendered layout layouts/base.html.erb (Duration: 62.8ms | Allocations: 14122)
+I, [2023-09-08T11:02:17.305320 #251]  INFO -- : [e2d89652-d42a-4c53-86df-789d61e3c736] Completed 200 OK in 100ms (Views: 47.0ms | ActiveRecord: 32.4ms | Allocations: 18977)
+I, [2023-09-08T11:02:18.344030 #253]  INFO -- : [4d59f9f7-55e1-4e4e-a95e-4d6c39680f60] Started GET "/projects/nexle-it-project/settings" for 172.16.0.20 at 2023-09-08 11:02:18 +0000
+I, [2023-09-08T11:02:18.345014 #253]  INFO -- : [4d59f9f7-55e1-4e4e-a95e-4d6c39680f60] Processing by ProjectsController#settings as HTML
+I, [2023-09-08T11:02:18.345100 #253]  INFO -- : [4d59f9f7-55e1-4e4e-a95e-4d6c39680f60]   Parameters: {"id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:18.353760 #253]  INFO -- : [4d59f9f7-55e1-4e4e-a95e-4d6c39680f60]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:18.516826 #253]  INFO -- : [4d59f9f7-55e1-4e4e-a95e-4d6c39680f60]   Rendered projects/settings.html.erb within layouts/base (Duration: 76.9ms | Allocations: 4152)
+I, [2023-09-08T11:02:18.563057 #253]  INFO -- : [4d59f9f7-55e1-4e4e-a95e-4d6c39680f60]   Rendered layout layouts/base.html.erb (Duration: 123.1ms | Allocations: 14191)
+I, [2023-09-08T11:02:18.563607 #253]  INFO -- : [4d59f9f7-55e1-4e4e-a95e-4d6c39680f60] Completed 200 OK in 218ms (Views: 104.3ms | ActiveRecord: 35.8ms | Allocations: 34751)
+I, [2023-09-08T11:02:19.582351 #251]  INFO -- : [84cd6b3c-0de1-4424-adcd-32faf8598d34] Started GET "/projects/nexle-it-project/time_entries" for 172.16.0.20 at 2023-09-08 11:02:19 +0000
+I, [2023-09-08T11:02:19.583727 #251]  INFO -- : [84cd6b3c-0de1-4424-adcd-32faf8598d34] Processing by TimelogController#index as HTML
+I, [2023-09-08T11:02:19.583816 #251]  INFO -- : [84cd6b3c-0de1-4424-adcd-32faf8598d34]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:19.593857 #251]  INFO -- : [84cd6b3c-0de1-4424-adcd-32faf8598d34]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:20.346952 #251]  INFO -- : [84cd6b3c-0de1-4424-adcd-32faf8598d34]   Rendered timelog/index.html.erb within layouts/base (Duration: 233.9ms | Allocations: 32596)
+I, [2023-09-08T11:02:20.380987 #251]  INFO -- : [84cd6b3c-0de1-4424-adcd-32faf8598d34]   Rendered layout layouts/base.html.erb (Duration: 268.0ms | Allocations: 41030)
+I, [2023-09-08T11:02:20.381581 #251]  INFO -- : [84cd6b3c-0de1-4424-adcd-32faf8598d34] Completed 200 OK in 798ms (Views: 132.7ms | ActiveRecord: 361.2ms | Allocations: 104333)
+I, [2023-09-08T11:02:23.667935 #251]  INFO -- : [3dd67781-bbfd-40a1-a789-910949ed9657] Started GET "/projects/nexle-it-project/issues" for 172.16.0.20 at 2023-09-08 11:02:23 +0000
+I, [2023-09-08T11:02:23.669161 #251]  INFO -- : [3dd67781-bbfd-40a1-a789-910949ed9657] Processing by IssuesController#index as HTML
+I, [2023-09-08T11:02:23.669248 #251]  INFO -- : [3dd67781-bbfd-40a1-a789-910949ed9657]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:23.677903 #251]  INFO -- : [3dd67781-bbfd-40a1-a789-910949ed9657]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:24.023692 #251]  INFO -- : [3dd67781-bbfd-40a1-a789-910949ed9657]   Rendered issues/index.html.erb within layouts/base (Duration: 187.0ms | Allocations: 52380)
+I, [2023-09-08T11:02:24.053923 #251]  INFO -- : [3dd67781-bbfd-40a1-a789-910949ed9657]   Rendered layout layouts/base.html.erb (Duration: 217.3ms | Allocations: 60375)
+I, [2023-09-08T11:02:24.054468 #251]  INFO -- : [3dd67781-bbfd-40a1-a789-910949ed9657] Completed 200 OK in 385ms (Views: 194.1ms | ActiveRecord: 87.1ms | Allocations: 86742)
+I, [2023-09-08T11:02:29.254795 #253]  INFO -- : [e3630d41-fc75-4344-bfb5-9dbd0551cfa0] Started GET "/projects/nexle-it-project/activity" for 172.16.0.20 at 2023-09-08 11:02:29 +0000
+I, [2023-09-08T11:02:29.256245 #253]  INFO -- : [e3630d41-fc75-4344-bfb5-9dbd0551cfa0] Processing by ActivitiesController#index as HTML
+I, [2023-09-08T11:02:29.256357 #253]  INFO -- : [e3630d41-fc75-4344-bfb5-9dbd0551cfa0]   Parameters: {"id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:29.264724 #253]  INFO -- : [e3630d41-fc75-4344-bfb5-9dbd0551cfa0]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:29.312472 #253]  INFO -- : [e3630d41-fc75-4344-bfb5-9dbd0551cfa0] Completed 304 Not Modified in 56ms (ActiveRecord: 25.0ms | Allocations: 7498)
+I, [2023-09-08T11:02:32.078078 #253]  INFO -- : [2f19aa21-3ee0-4744-a6fb-6e097c3307d0] Started GET "/projects/nexle-it-project" for 172.16.0.20 at 2023-09-08 11:02:32 +0000
+I, [2023-09-08T11:02:32.079082 #253]  INFO -- : [2f19aa21-3ee0-4744-a6fb-6e097c3307d0] Processing by ProjectsController#show as HTML
+I, [2023-09-08T11:02:32.079168 #253]  INFO -- : [2f19aa21-3ee0-4744-a6fb-6e097c3307d0]   Parameters: {"id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:32.087404 #253]  INFO -- : [2f19aa21-3ee0-4744-a6fb-6e097c3307d0]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:32.244138 #253]  INFO -- : [2f19aa21-3ee0-4744-a6fb-6e097c3307d0]   Rendered projects/show.html.erb within layouts/base (Duration: 22.9ms | Allocations: 5442)
+I, [2023-09-08T11:02:32.278953 #253]  INFO -- : [2f19aa21-3ee0-4744-a6fb-6e097c3307d0]   Rendered layout layouts/base.html.erb (Duration: 57.7ms | Allocations: 13814)
+I, [2023-09-08T11:02:32.279505 #253]  INFO -- : [2f19aa21-3ee0-4744-a6fb-6e097c3307d0] Completed 200 OK in 200ms (Views: 45.5ms | ActiveRecord: 98.0ms | Allocations: 29025)
+I, [2023-09-08T11:02:34.374925 #253]  INFO -- : [c925bbae-ac95-4514-83e3-1435520d6636] Started GET "/projects/nexle-it-project/time_entries" for 172.16.0.20 at 2023-09-08 11:02:34 +0000
+I, [2023-09-08T11:02:34.376096 #253]  INFO -- : [c925bbae-ac95-4514-83e3-1435520d6636] Processing by TimelogController#index as HTML
+I, [2023-09-08T11:02:34.376202 #253]  INFO -- : [c925bbae-ac95-4514-83e3-1435520d6636]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:34.384701 #253]  INFO -- : [c925bbae-ac95-4514-83e3-1435520d6636]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:34.962434 #253]  INFO -- : [c925bbae-ac95-4514-83e3-1435520d6636]   Rendered timelog/index.html.erb within layouts/base (Duration: 243.5ms | Allocations: 34791)
+I, [2023-09-08T11:02:34.996290 #253]  INFO -- : [c925bbae-ac95-4514-83e3-1435520d6636]   Rendered layout layouts/base.html.erb (Duration: 277.4ms | Allocations: 43220)
+I, [2023-09-08T11:02:34.996894 #253]  INFO -- : [c925bbae-ac95-4514-83e3-1435520d6636] Completed 200 OK in 621ms (Views: 138.8ms | ActiveRecord: 354.4ms | Allocations: 74285)
+I, [2023-09-08T11:02:36.075905 #251]  INFO -- : [38c9b2dc-4575-4af5-98d1-37359a887d75] Started GET "/projects/nexle-it-project/issues" for 172.16.0.20 at 2023-09-08 11:02:36 +0000
+I, [2023-09-08T11:02:36.077225 #251]  INFO -- : [38c9b2dc-4575-4af5-98d1-37359a887d75] Processing by IssuesController#index as HTML
+I, [2023-09-08T11:02:36.077313 #251]  INFO -- : [38c9b2dc-4575-4af5-98d1-37359a887d75]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:36.086162 #251]  INFO -- : [38c9b2dc-4575-4af5-98d1-37359a887d75]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:36.389247 #251]  INFO -- : [38c9b2dc-4575-4af5-98d1-37359a887d75]   Rendered issues/index.html.erb within layouts/base (Duration: 153.6ms | Allocations: 49082)
+I, [2023-09-08T11:02:36.419830 #251]  INFO -- : [38c9b2dc-4575-4af5-98d1-37359a887d75]   Rendered layout layouts/base.html.erb (Duration: 184.3ms | Allocations: 57029)
+I, [2023-09-08T11:02:36.420330 #251]  INFO -- : [38c9b2dc-4575-4af5-98d1-37359a887d75] Completed 200 OK in 343ms (Views: 159.0ms | ActiveRecord: 91.1ms | Allocations: 77372)
+I, [2023-09-08T11:02:48.176273 #253]  INFO -- : [d6a88d15-6f3a-4220-a19e-57aac7926f65] Started GET "/projects/nexle-it-project/issues/report" for 172.16.0.20 at 2023-09-08 11:02:48 +0000
+I, [2023-09-08T11:02:48.177672 #253]  INFO -- : [d6a88d15-6f3a-4220-a19e-57aac7926f65] Processing by ReportsController#issue_report as HTML
+I, [2023-09-08T11:02:48.177758 #253]  INFO -- : [d6a88d15-6f3a-4220-a19e-57aac7926f65]   Parameters: {"id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:48.191062 #253]  INFO -- : [d6a88d15-6f3a-4220-a19e-57aac7926f65]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:48.437029 #253]  INFO -- : [d6a88d15-6f3a-4220-a19e-57aac7926f65]   Rendered reports/issue_report.html.erb within layouts/base (Duration: 70.7ms | Allocations: 24204)
+I, [2023-09-08T11:02:48.475992 #253]  INFO -- : [d6a88d15-6f3a-4220-a19e-57aac7926f65]   Rendered layout layouts/base.html.erb (Duration: 109.7ms | Allocations: 33019)
+I, [2023-09-08T11:02:48.476625 #253]  INFO -- : [d6a88d15-6f3a-4220-a19e-57aac7926f65] Completed 200 OK in 299ms (Views: 96.0ms | ActiveRecord: 99.8ms | Allocations: 60572)
+I, [2023-09-08T11:02:50.476165 #251]  INFO -- : [4e3e7f46-e2a4-43a1-a9b2-32a0128095fe] Started GET "/projects/nexle-it-project/issues" for 172.16.0.20 at 2023-09-08 11:02:50 +0000
+I, [2023-09-08T11:02:50.477283 #251]  INFO -- : [4e3e7f46-e2a4-43a1-a9b2-32a0128095fe] Processing by IssuesController#index as HTML
+I, [2023-09-08T11:02:50.477369 #251]  INFO -- : [4e3e7f46-e2a4-43a1-a9b2-32a0128095fe]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:02:50.485751 #251]  INFO -- : [4e3e7f46-e2a4-43a1-a9b2-32a0128095fe]   Current user: anhdh (id=495)
+I, [2023-09-08T11:02:50.775963 #251]  INFO -- : [4e3e7f46-e2a4-43a1-a9b2-32a0128095fe]   Rendered issues/index.html.erb within layouts/base (Duration: 155.5ms | Allocations: 49036)
+I, [2023-09-08T11:02:50.807268 #251]  INFO -- : [4e3e7f46-e2a4-43a1-a9b2-32a0128095fe]   Rendered layout layouts/base.html.erb (Duration: 186.8ms | Allocations: 56983)
+I, [2023-09-08T11:02:50.807806 #251]  INFO -- : [4e3e7f46-e2a4-43a1-a9b2-32a0128095fe] Completed 200 OK in 330ms (Views: 161.1ms | ActiveRecord: 91.1ms | Allocations: 77279)
+I, [2023-09-08T11:03:33.659147 #253]  INFO -- : [20d89497-4edf-47b4-9f15-8409cd5bd34c] Started GET "/projects/nexle-it-project/issues?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&c%5B%5D=start_date&c%5B%5D=estimated_hours&c%5B%5D=spent_hours&c%5B%5D=done_ratio&group_by=&t%5B%5D=" for 172.16.0.20 at 2023-09-08 11:03:33 +0000
+I, [2023-09-08T11:03:33.661070 #253]  INFO -- : [20d89497-4edf-47b4-9f15-8409cd5bd34c] Processing by IssuesController#index as HTML
+I, [2023-09-08T11:03:33.661196 #253]  INFO -- : [20d89497-4edf-47b4-9f15-8409cd5bd34c]   Parameters: {"utf8"=>"✓", "set_filter"=>"1", "sort"=>"id:desc", "f"=>["status_id", ""], "op"=>{"status_id"=>"o"}, "c"=>["status", "priority", "subject", "assigned_to", "updated_on", "start_date", "estimated_hours", "spent_hours", "done_ratio"], "group_by"=>"", "t"=>[""], "project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:03:33.670347 #253]  INFO -- : [20d89497-4edf-47b4-9f15-8409cd5bd34c]   Current user: anhdh (id=495)
+I, [2023-09-08T11:03:34.007733 #253]  INFO -- : [20d89497-4edf-47b4-9f15-8409cd5bd34c]   Rendered issues/index.html.erb within layouts/base (Duration: 181.3ms | Allocations: 48507)
+I, [2023-09-08T11:03:34.039917 #253]  INFO -- : [20d89497-4edf-47b4-9f15-8409cd5bd34c]   Rendered layout layouts/base.html.erb (Duration: 213.6ms | Allocations: 56502)
+I, [2023-09-08T11:03:34.040483 #253]  INFO -- : [20d89497-4edf-47b4-9f15-8409cd5bd34c] Completed 200 OK in 379ms (Views: 184.1ms | ActiveRecord: 96.8ms | Allocations: 81447)
+I, [2023-09-08T11:03:43.327442 #253]  INFO -- : [a2375c88-c7d7-469b-80c9-f89a21d776d8] Started GET "/projects/nexle-it-project/issues?utf8=%E2%9C%93&set_filter=1&sort=id%3Adesc&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=&c%5B%5D=status&c%5B%5D=priority&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&c%5B%5D=start_date&c%5B%5D=spent_hours&c%5B%5D=done_ratio&group_by=&t%5B%5D=" for 172.16.0.20 at 2023-09-08 11:03:43 +0000
+I, [2023-09-08T11:03:43.329376 #253]  INFO -- : [a2375c88-c7d7-469b-80c9-f89a21d776d8] Processing by IssuesController#index as HTML
+I, [2023-09-08T11:03:43.329516 #253]  INFO -- : [a2375c88-c7d7-469b-80c9-f89a21d776d8]   Parameters: {"utf8"=>"✓", "set_filter"=>"1", "sort"=>"id:desc", "f"=>["status_id", ""], "op"=>{"status_id"=>"o"}, "c"=>["status", "priority", "subject", "assigned_to", "updated_on", "start_date", "spent_hours", "done_ratio"], "group_by"=>"", "t"=>[""], "project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:03:43.339387 #253]  INFO -- : [a2375c88-c7d7-469b-80c9-f89a21d776d8]   Current user: anhdh (id=495)
+I, [2023-09-08T11:03:43.615379 #253]  INFO -- : [a2375c88-c7d7-469b-80c9-f89a21d776d8]   Rendered issues/index.html.erb within layouts/base (Duration: 142.9ms | Allocations: 44051)
+I, [2023-09-08T11:03:43.646270 #253]  INFO -- : [a2375c88-c7d7-469b-80c9-f89a21d776d8]   Rendered layout layouts/base.html.erb (Duration: 173.8ms | Allocations: 51998)
+I, [2023-09-08T11:03:43.646793 #253]  INFO -- : [a2375c88-c7d7-469b-80c9-f89a21d776d8] Completed 200 OK in 317ms (Views: 148.6ms | ActiveRecord: 89.3ms | Allocations: 71520)
+I, [2023-09-08T11:23:13.490058 #251]  INFO -- : [cc3c9781-935f-44c4-81dc-0ce9c191ca07] Started GET "/projects/nexle-it-project/activity" for 172.16.0.20 at 2023-09-08 11:23:13 +0000
+I, [2023-09-08T11:23:13.492672 #251]  INFO -- : [cc3c9781-935f-44c4-81dc-0ce9c191ca07] Processing by ActivitiesController#index as HTML
+I, [2023-09-08T11:23:13.492790 #251]  INFO -- : [cc3c9781-935f-44c4-81dc-0ce9c191ca07]   Parameters: {"id"=>"nexle-it-project"}
+I, [2023-09-08T11:23:13.567338 #251]  INFO -- : [cc3c9781-935f-44c4-81dc-0ce9c191ca07]   Current user: anhdh (id=495)
+I, [2023-09-08T11:23:13.629256 #251]  INFO -- : [cc3c9781-935f-44c4-81dc-0ce9c191ca07] Completed 304 Not Modified in 136ms (ActiveRecord: 33.3ms | Allocations: 8717)
+I, [2023-09-08T11:23:54.795851 #251]  INFO -- : [9f57585a-f98e-4a19-a8e5-b9871af86098] Started GET "/projects/nexle-it-project/time_entries" for 172.16.0.20 at 2023-09-08 11:23:54 +0000
+I, [2023-09-08T11:23:54.797206 #251]  INFO -- : [9f57585a-f98e-4a19-a8e5-b9871af86098] Processing by TimelogController#index as HTML
+I, [2023-09-08T11:23:54.797327 #251]  INFO -- : [9f57585a-f98e-4a19-a8e5-b9871af86098]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:23:54.806916 #251]  INFO -- : [9f57585a-f98e-4a19-a8e5-b9871af86098]   Current user: anhdh (id=495)
+I, [2023-09-08T11:23:55.331350 #251]  INFO -- : [9f57585a-f98e-4a19-a8e5-b9871af86098]   Rendered timelog/index.html.erb within layouts/base (Duration: 247.4ms | Allocations: 30120)
+I, [2023-09-08T11:23:55.366912 #251]  INFO -- : [9f57585a-f98e-4a19-a8e5-b9871af86098]   Rendered layout layouts/base.html.erb (Duration: 283.0ms | Allocations: 38536)
+I, [2023-09-08T11:23:55.367496 #251]  INFO -- : [9f57585a-f98e-4a19-a8e5-b9871af86098] Completed 200 OK in 570ms (Views: 138.5ms | ActiveRecord: 353.8ms | Allocations: 56238)
+I, [2023-09-08T11:26:05.385189 #251]  INFO -- : [25652b0c-0378-4205-a872-28049cafef27] Started GET "/projects/nexle-it-project/documents" for 172.16.0.233 at 2023-09-08 11:26:05 +0000
+I, [2023-09-08T11:26:05.386880 #251]  INFO -- : [25652b0c-0378-4205-a872-28049cafef27] Processing by DocumentsController#index as HTML
+I, [2023-09-08T11:26:05.386969 #251]  INFO -- : [25652b0c-0378-4205-a872-28049cafef27]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:26:05.399515 #251]  INFO -- : [25652b0c-0378-4205-a872-28049cafef27]   Current user: anhdh (id=495)
+I, [2023-09-08T11:26:05.448553 #251]  INFO -- : [25652b0c-0378-4205-a872-28049cafef27]   Rendered documents/index.html.erb within layouts/base (Duration: 19.4ms | Allocations: 4463)
+I, [2023-09-08T11:26:05.493713 #251]  INFO -- : [25652b0c-0378-4205-a872-28049cafef27]   Rendered layout layouts/base.html.erb (Duration: 64.6ms | Allocations: 14116)
+I, [2023-09-08T11:26:05.494296 #251]  INFO -- : [25652b0c-0378-4205-a872-28049cafef27] Completed 200 OK in 107ms (Views: 48.0ms | ActiveRecord: 36.0ms | Allocations: 19095)
+I, [2023-09-08T11:26:06.466235 #251]  INFO -- : [497f5f2c-ab60-4b68-ba61-96db1a5c0275] Started GET "/projects/nexle-it-project/time_entries" for 172.16.0.233 at 2023-09-08 11:26:06 +0000
+I, [2023-09-08T11:26:06.467316 #251]  INFO -- : [497f5f2c-ab60-4b68-ba61-96db1a5c0275] Processing by TimelogController#index as HTML
+I, [2023-09-08T11:26:06.467409 #251]  INFO -- : [497f5f2c-ab60-4b68-ba61-96db1a5c0275]   Parameters: {"project_id"=>"nexle-it-project"}
+I, [2023-09-08T11:26:06.476414 #251]  INFO -- : [497f5f2c-ab60-4b68-ba61-96db1a5c0275]   Current user: anhdh (id=495)
+I, [2023-09-08T11:26:06.971800 #251]  INFO -- : [497f5f2c-ab60-4b68-ba61-96db1a5c0275]   Rendered timelog/index.html.erb within layouts/base (Duration: 228.5ms | Allocations: 30054)
+I, [2023-09-08T11:26:07.007201 #251]  INFO -- : [497f5f2c-ab60-4b68-ba61-96db1a5c0275]   Rendered layout layouts/base.html.erb (Duration: 263.9ms | Allocations: 38431)
+I, [2023-09-08T11:26:07.007759 #251]  INFO -- : [497f5f2c-ab60-4b68-ba61-96db1a5c0275] Completed 200 OK in 540ms (Views: 119.0ms | ActiveRecord: 350.2ms | Allocations: 56140)
+I, [2023-09-08T11:44:18.396756 #253]  INFO -- : [19a682f4-ac0b-400b-afbb-e06eaf80348b] Started GET "/" for 192.168.46.237 at 2023-09-08 11:44:18 +0000
+I, [2023-09-08T11:44:18.398583 #253]  INFO -- : [19a682f4-ac0b-400b-afbb-e06eaf80348b] Processing by WelcomeController#index as HTML
+I, [2023-09-08T11:44:18.466046 #253]  INFO -- : [19a682f4-ac0b-400b-afbb-e06eaf80348b]   Current user: anonymous
+I, [2023-09-08T11:44:18.521719 #253]  INFO -- : [19a682f4-ac0b-400b-afbb-e06eaf80348b]   Rendered welcome/index.html.erb within layouts/base (Duration: 1.5ms | Allocations: 371)
+I, [2023-09-08T11:44:18.544361 #253]  INFO -- : [19a682f4-ac0b-400b-afbb-e06eaf80348b]   Rendered layout layouts/base.html.erb (Duration: 24.2ms | Allocations: 4821)
+I, [2023-09-08T11:44:18.544873 #253]  INFO -- : [19a682f4-ac0b-400b-afbb-e06eaf80348b] Completed 200 OK in 146ms (Views: 20.7ms | ActiveRecord: 16.2ms | Allocations: 17184)
+I, [2023-09-08T11:52:39.587549 #251]  INFO -- : [9038fe0c-1609-47da-9346-74272903c421] Started GET "/" for 172.16.0.233 at 2023-09-08 11:52:39 +0000
+I, [2023-09-08T11:52:39.589736 #251]  INFO -- : [9038fe0c-1609-47da-9346-74272903c421] Processing by WelcomeController#index as HTML
+I, [2023-09-08T11:52:39.642417 #251]  INFO -- : [9038fe0c-1609-47da-9346-74272903c421]   Current user: anhdh (id=495)
+I, [2023-09-08T11:52:39.672632 #251]  INFO -- : [9038fe0c-1609-47da-9346-74272903c421]   Rendered welcome/index.html.erb within layouts/base (Duration: 12.4ms | Allocations: 2696)
+I, [2023-09-08T11:52:39.693371 #251]  INFO -- : [9038fe0c-1609-47da-9346-74272903c421]   Rendered layout layouts/base.html.erb (Duration: 33.2ms | Allocations: 8265)
+I, [2023-09-08T11:52:39.693907 #251]  INFO -- : [9038fe0c-1609-47da-9346-74272903c421] Completed 200 OK in 104ms (Views: 30.4ms | ActiveRecord: 14.8ms | Allocations: 11949)
+I, [2023-09-08T11:54:11.086210 #253]  INFO -- : [595dc36e-27fc-4376-b57d-3acf02750128] Started GET "/" for 192.168.46.237 at 2023-09-08 11:54:11 +0000
+I, [2023-09-08T11:54:11.087851 #253]  INFO -- : [595dc36e-27fc-4376-b57d-3acf02750128] Processing by WelcomeController#index as HTML
+I, [2023-09-08T11:54:11.151173 #253]  INFO -- : [595dc36e-27fc-4376-b57d-3acf02750128]   Current user: anonymous
+I, [2023-09-08T11:54:11.166048 #253]  INFO -- : [595dc36e-27fc-4376-b57d-3acf02750128]   Rendered welcome/index.html.erb within layouts/base (Duration: 1.3ms | Allocations: 362)
+I, [2023-09-08T11:54:11.178997 #253]  INFO -- : [595dc36e-27fc-4376-b57d-3acf02750128]   Rendered layout layouts/base.html.erb (Duration: 14.3ms | Allocations: 4003)
+I, [2023-09-08T11:54:11.179421 #253]  INFO -- : [595dc36e-27fc-4376-b57d-3acf02750128] Completed 200 OK in 91ms (Views: 15.0ms | ActiveRecord: 10.3ms | Allocations: 6192)
+I, [2023-09-08T12:59:20.988395 #253]  INFO -- : [02f39b44-d35c-4b98-a3d3-1173b79992be] Started POST "/logout" for 172.16.0.233 at 2023-09-08 12:59:20 +0000
+I, [2023-09-08T12:59:20.991133 #253]  INFO -- : [02f39b44-d35c-4b98-a3d3-1173b79992be] Processing by AccountController#logout as HTML
+I, [2023-09-08T12:59:20.991240 #253]  INFO -- : [02f39b44-d35c-4b98-a3d3-1173b79992be]   Parameters: {"authenticity_token"=>"55dqUlldJ2uinBi1OLLqnD2mQfAfhwosYkEezpxqPBIVNWyPWmfCYuh4V/xj1fNzbpgLyHK9DYlQzNbcN+00dA=="}
+I, [2023-09-08T12:59:21.059051 #253]  INFO -- : [02f39b44-d35c-4b98-a3d3-1173b79992be]   Current user: anhdh (id=495)
+I, [2023-09-08T12:59:21.064953 #253]  INFO -- : [02f39b44-d35c-4b98-a3d3-1173b79992be] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T12:59:21.065262 #253]  INFO -- : [02f39b44-d35c-4b98-a3d3-1173b79992be] Completed 302 Found in 74ms (ActiveRecord: 10.5ms | Allocations: 1626)
+I, [2023-09-08T12:59:21.460580 #253]  INFO -- : [79ec9156-8785-4949-bc64-ade2622e75cb] Started GET "/" for 172.16.0.233 at 2023-09-08 12:59:21 +0000
+I, [2023-09-08T12:59:21.461949 #253]  INFO -- : [79ec9156-8785-4949-bc64-ade2622e75cb] Processing by WelcomeController#index as HTML
+I, [2023-09-08T12:59:21.467505 #253]  INFO -- : [79ec9156-8785-4949-bc64-ade2622e75cb]   Current user: anonymous
+I, [2023-09-08T12:59:21.481226 #253]  INFO -- : [79ec9156-8785-4949-bc64-ade2622e75cb]   Rendered welcome/index.html.erb within layouts/base (Duration: 1.3ms | Allocations: 362)
+I, [2023-09-08T12:59:21.494307 #253]  INFO -- : [79ec9156-8785-4949-bc64-ade2622e75cb]   Rendered layout layouts/base.html.erb (Duration: 14.4ms | Allocations: 4007)
+I, [2023-09-08T12:59:21.494716 #253]  INFO -- : [79ec9156-8785-4949-bc64-ade2622e75cb] Completed 200 OK in 33ms (Views: 15.1ms | ActiveRecord: 8.1ms | Allocations: 6041)
+I, [2023-09-08T12:59:24.692986 #253]  INFO -- : [2c20f248-c965-4520-a9d4-839dc2b0410c] Started GET "/login" for 172.16.0.233 at 2023-09-08 12:59:24 +0000
+I, [2023-09-08T12:59:24.693969 #253]  INFO -- : [2c20f248-c965-4520-a9d4-839dc2b0410c] Processing by AccountController#login as HTML
+I, [2023-09-08T12:59:24.700083 #253]  INFO -- : [2c20f248-c965-4520-a9d4-839dc2b0410c]   Current user: anonymous
+I, [2023-09-08T12:59:24.710194 #253]  INFO -- : [2c20f248-c965-4520-a9d4-839dc2b0410c]   Rendered account/login.html.erb within layouts/base (Duration: 7.7ms | Allocations: 1304)
+I, [2023-09-08T12:59:24.731086 #253]  INFO -- : [2c20f248-c965-4520-a9d4-839dc2b0410c]   Rendered layout layouts/base.html.erb (Duration: 28.6ms | Allocations: 5738)
+I, [2023-09-08T12:59:24.731531 #253]  INFO -- : [2c20f248-c965-4520-a9d4-839dc2b0410c] Completed 200 OK in 37ms (Views: 24.0ms | ActiveRecord: 8.7ms | Allocations: 6839)
+I, [2023-09-08T12:59:27.044188 #253]  INFO -- : [95d46067-1450-4274-9abd-405b969bd867] Started POST "/login" for 172.16.0.233 at 2023-09-08 12:59:27 +0000
+I, [2023-09-08T12:59:27.045385 #253]  INFO -- : [95d46067-1450-4274-9abd-405b969bd867] Processing by AccountController#login as HTML
+I, [2023-09-08T12:59:27.045503 #253]  INFO -- : [95d46067-1450-4274-9abd-405b969bd867]   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ABWzhCKPfHXL4iqzRjZ8YPloRrPAJ7GzXe5y29pmeMUACTTDej9KILYat9OFdVoABm9WyCLvRDBCvUU8xNVLBw==", "back_url"=>"/", "username"=>"admin", "password"=>"[FILTERED]", "login"=>"Login"}
+I, [2023-09-08T12:59:27.051859 #253]  INFO -- : [95d46067-1450-4274-9abd-405b969bd867]   Current user: anonymous
+I, [2023-09-08T12:59:27.058769 #253]  INFO -- : [95d46067-1450-4274-9abd-405b969bd867] Successful authentication for 'admin' from 172.16.0.233 at 2023-09-08 12:59:27 UTC
+I, [2023-09-08T12:59:27.075070 #253]  INFO -- : [95d46067-1450-4274-9abd-405b969bd867] Redirected to http://192.168.45.28:10083/
+I, [2023-09-08T12:59:27.075306 #253]  INFO -- : [95d46067-1450-4274-9abd-405b969bd867] Completed 302 Found in 30ms (ActiveRecord: 15.9ms | Allocations: 2573)
+I, [2023-09-08T12:59:27.091014 #253]  INFO -- : [5c1fa6f3-5d79-403d-a28c-0543f1f40abe] Started GET "/" for 172.16.0.233 at 2023-09-08 12:59:27 +0000
+I, [2023-09-08T12:59:27.091874 #253]  INFO -- : [5c1fa6f3-5d79-403d-a28c-0543f1f40abe] Processing by WelcomeController#index as HTML
+I, [2023-09-08T12:59:27.099193 #253]  INFO -- : [5c1fa6f3-5d79-403d-a28c-0543f1f40abe]   Current user: admin (id=1)
+I, [2023-09-08T12:59:27.121225 #253]  INFO -- : [5c1fa6f3-5d79-403d-a28c-0543f1f40abe]   Rendered welcome/index.html.erb within layouts/base (Duration: 13.0ms | Allocations: 2696)
+I, [2023-09-08T12:59:27.138169 #253]  INFO -- : [5c1fa6f3-5d79-403d-a28c-0543f1f40abe]   Rendered layout layouts/base.html.erb (Duration: 30.0ms | Allocations: 7177)
+I, [2023-09-08T12:59:27.138539 #253]  INFO -- : [5c1fa6f3-5d79-403d-a28c-0543f1f40abe] Completed 200 OK in 47ms (Views: 25.7ms | ActiveRecord: 11.9ms | Allocations: 9178)
+I, [2023-09-08T12:59:42.913281 #253]  INFO -- : [7d6e1280-881a-4b69-a69c-d732455f0090] Started GET "/admin" for 172.16.0.233 at 2023-09-08 12:59:42 +0000
+I, [2023-09-08T12:59:42.914336 #253]  INFO -- : [7d6e1280-881a-4b69-a69c-d732455f0090] Processing by AdminController#index as HTML
+I, [2023-09-08T12:59:42.923041 #253]  INFO -- : [7d6e1280-881a-4b69-a69c-d732455f0090]   Current user: admin (id=1)
+I, [2023-09-08T12:59:42.931100 #253]  INFO -- : [7d6e1280-881a-4b69-a69c-d732455f0090]   Rendered admin/index.html.erb within layouts/admin (Duration: 5.3ms | Allocations: 1626)
+I, [2023-09-08T12:59:42.961046 #253]  INFO -- : [7d6e1280-881a-4b69-a69c-d732455f0090]   Rendered layouts/base.html.erb (Duration: 29.7ms | Allocations: 4642)
+I, [2023-09-08T12:59:42.961215 #253]  INFO -- : [7d6e1280-881a-4b69-a69c-d732455f0090]   Rendered layout layouts/admin.html.erb (Duration: 35.4ms | Allocations: 6355)
+I, [2023-09-08T12:59:42.961595 #253]  INFO -- : [7d6e1280-881a-4b69-a69c-d732455f0090] Completed 200 OK in 47ms (Views: 32.4ms | ActiveRecord: 8.3ms | Allocations: 7582)
+I, [2023-09-08T13:02:25.166914 #253]  INFO -- : [9aa7bc4f-2cc5-442b-969a-bf96dd546c5c] Started GET "/admin/projects" for 172.16.0.233 at 2023-09-08 13:02:25 +0000
+I, [2023-09-08T13:02:25.168579 #253]  INFO -- : [9aa7bc4f-2cc5-442b-969a-bf96dd546c5c] Processing by AdminController#projects as HTML
+I, [2023-09-08T13:02:25.182465 #253]  INFO -- : [9aa7bc4f-2cc5-442b-969a-bf96dd546c5c]   Current user: admin (id=1)
+I, [2023-09-08T13:02:25.242316 #253]  INFO -- : [9aa7bc4f-2cc5-442b-969a-bf96dd546c5c]   Rendered admin/projects.html.erb within layouts/admin (Duration: 52.6ms | Allocations: 11513)
+I, [2023-09-08T13:02:25.268346 #253]  INFO -- : [9aa7bc4f-2cc5-442b-969a-bf96dd546c5c]   Rendered layouts/base.html.erb (Duration: 19.8ms | Allocations: 4639)
+I, [2023-09-08T13:02:25.268516 #253]  INFO -- : [9aa7bc4f-2cc5-442b-969a-bf96dd546c5c]   Rendered layout layouts/admin.html.erb (Duration: 78.9ms | Allocations: 17834)
+I, [2023-09-08T13:02:25.268943 #253]  INFO -- : [9aa7bc4f-2cc5-442b-969a-bf96dd546c5c] Completed 200 OK in 100ms (Views: 75.2ms | ActiveRecord: 14.0ms | Allocations: 19895)
+I, [2023-09-08T13:02:46.984851 #253]  INFO -- : [c69b5940-cb9e-47df-9e91-88af83d22bed] Started GET "/projects" for 172.16.0.233 at 2023-09-08 13:02:46 +0000
+I, [2023-09-08T13:02:46.985914 #253]  INFO -- : [c69b5940-cb9e-47df-9e91-88af83d22bed] Processing by ProjectsController#index as HTML
+I, [2023-09-08T13:02:46.994763 #253]  INFO -- : [c69b5940-cb9e-47df-9e91-88af83d22bed]   Current user: admin (id=1)
+I, [2023-09-08T13:02:47.380248 #253]  INFO -- : [c69b5940-cb9e-47df-9e91-88af83d22bed]   Rendered projects/index.html.erb within layouts/base (Duration: 328.7ms | Allocations: 114787)
+I, [2023-09-08T13:02:47.410874 #253]  INFO -- : [c69b5940-cb9e-47df-9e91-88af83d22bed]   Rendered layout layouts/base.html.erb (Duration: 359.4ms | Allocations: 120935)
+I, [2023-09-08T13:02:47.411291 #253]  INFO -- : [c69b5940-cb9e-47df-9e91-88af83d22bed] Completed 200 OK in 425ms (Views: 345.6ms | ActiveRecord: 32.4ms | Allocations: 134489)
+I, [2023-09-08T13:02:54.975752 #251]  INFO -- : [9808623e-defb-416d-95ae-88e0977307e4] Started GET "/admin" for 172.16.0.233 at 2023-09-08 13:02:54 +0000
+I, [2023-09-08T13:02:54.977382 #251]  INFO -- : [9808623e-defb-416d-95ae-88e0977307e4] Processing by AdminController#index as HTML
+I, [2023-09-08T13:02:55.048316 #251]  INFO -- : [9808623e-defb-416d-95ae-88e0977307e4]   Current user: admin (id=1)
+I, [2023-09-08T13:02:55.056609 #251]  INFO -- : [9808623e-defb-416d-95ae-88e0977307e4]   Rendered admin/index.html.erb within layouts/admin (Duration: 5.0ms | Allocations: 1626)
+I, [2023-09-08T13:02:55.077683 #251]  INFO -- : [9808623e-defb-416d-95ae-88e0977307e4]   Rendered layouts/base.html.erb (Duration: 20.7ms | Allocations: 4642)
+I, [2023-09-08T13:02:55.077847 #251]  INFO -- : [9808623e-defb-416d-95ae-88e0977307e4]   Rendered layout layouts/admin.html.erb (Duration: 26.3ms | Allocations: 6355)
+I, [2023-09-08T13:02:55.078296 #251]  INFO -- : [9808623e-defb-416d-95ae-88e0977307e4] Completed 200 OK in 101ms (Views: 22.7ms | ActiveRecord: 10.2ms | Allocations: 7710)
+I, [2023-09-08T13:02:57.064598 #251]  INFO -- : [3bcc8de1-aaa3-4e7c-a61a-f2adb6a735e5] Started GET "/roles" for 172.16.0.233 at 2023-09-08 13:02:57 +0000
+I, [2023-09-08T13:02:57.065837 #251]  INFO -- : [3bcc8de1-aaa3-4e7c-a61a-f2adb6a735e5] Processing by RolesController#index as HTML
+I, [2023-09-08T13:02:57.074589 #251]  INFO -- : [3bcc8de1-aaa3-4e7c-a61a-f2adb6a735e5]   Current user: admin (id=1)
+I, [2023-09-08T13:02:57.137416 #251]  INFO -- : [3bcc8de1-aaa3-4e7c-a61a-f2adb6a735e5]   Rendered roles/index.html.erb within layouts/admin (Duration: 57.2ms | Allocations: 4733)
+I, [2023-09-08T13:02:57.163144 #251]  INFO -- : [3bcc8de1-aaa3-4e7c-a61a-f2adb6a735e5]   Rendered layouts/base.html.erb (Duration: 20.2ms | Allocations: 4642)
+I, [2023-09-08T13:02:57.163328 #251]  INFO -- : [3bcc8de1-aaa3-4e7c-a61a-f2adb6a735e5]   Rendered layout layouts/admin.html.erb (Duration: 83.2ms | Allocations: 11063)
+I, [2023-09-08T13:02:57.163784 #251]  INFO -- : [3bcc8de1-aaa3-4e7c-a61a-f2adb6a735e5] Completed 200 OK in 98ms (Views: 73.4ms | ActiveRecord: 16.1ms | Allocations: 12826)
+I, [2023-09-08T13:03:35.125667 #251]  INFO -- : [5f701c0e-f5d2-486d-90ac-d5f4ab6ca5fa] Started GET "/trackers" for 172.16.0.233 at 2023-09-08 13:03:35 +0000
+I, [2023-09-08T13:03:35.126855 #251]  INFO -- : [5f701c0e-f5d2-486d-90ac-d5f4ab6ca5fa] Processing by TrackersController#index as HTML
+I, [2023-09-08T13:03:35.140794 #251]  INFO -- : [5f701c0e-f5d2-486d-90ac-d5f4ab6ca5fa]   Current user: admin (id=1)
+I, [2023-09-08T13:03:35.213531 #251]  INFO -- : [5f701c0e-f5d2-486d-90ac-d5f4ab6ca5fa]   Rendered trackers/index.html.erb within layouts/admin (Duration: 67.6ms | Allocations: 9724)
+I, [2023-09-08T13:03:35.238242 #251]  INFO -- : [5f701c0e-f5d2-486d-90ac-d5f4ab6ca5fa]   Rendered layouts/base.html.erb (Duration: 19.6ms | Allocations: 4653)
+I, [2023-09-08T13:03:35.238443 #251]  INFO -- : [5f701c0e-f5d2-486d-90ac-d5f4ab6ca5fa]   Rendered layout layouts/admin.html.erb (Duration: 92.6ms | Allocations: 16065)
+I, [2023-09-08T13:03:35.238867 #251]  INFO -- : [5f701c0e-f5d2-486d-90ac-d5f4ab6ca5fa] Completed 200 OK in 112ms (Views: 74.9ms | ActiveRecord: 27.5ms | Allocations: 17929)
+I, [2023-09-08T13:03:38.376513 #251]  INFO -- : [85e3df35-c8cb-4cc7-8aaa-48ed76fdc14e] Started GET "/issue_statuses" for 172.16.0.233 at 2023-09-08 13:03:38 +0000
+I, [2023-09-08T13:03:38.377772 #251]  INFO -- : [85e3df35-c8cb-4cc7-8aaa-48ed76fdc14e] Processing by IssueStatusesController#index as HTML
+I, [2023-09-08T13:03:38.387052 #251]  INFO -- : [85e3df35-c8cb-4cc7-8aaa-48ed76fdc14e]   Current user: admin (id=1)
+I, [2023-09-08T13:03:38.442572 #251]  INFO -- : [85e3df35-c8cb-4cc7-8aaa-48ed76fdc14e]   Rendered issue_statuses/index.html.erb within layouts/admin (Duration: 50.8ms | Allocations: 4852)
+I, [2023-09-08T13:03:38.467298 #251]  INFO -- : [85e3df35-c8cb-4cc7-8aaa-48ed76fdc14e]   Rendered layouts/base.html.erb (Duration: 19.8ms | Allocations: 4644)
+I, [2023-09-08T13:03:38.467476 #251]  INFO -- : [85e3df35-c8cb-4cc7-8aaa-48ed76fdc14e]   Rendered layout layouts/admin.html.erb (Duration: 75.8ms | Allocations: 11191)
+I, [2023-09-08T13:03:38.467926 #251]  INFO -- : [85e3df35-c8cb-4cc7-8aaa-48ed76fdc14e] Completed 200 OK in 90ms (Views: 46.9ms | ActiveRecord: 35.0ms | Allocations: 12901)
+I, [2023-09-08T13:04:19.639232 #251]  INFO -- : [bfe65709-9fea-4f3c-b232-7234e72a763b] Started GET "/custom_fields" for 172.16.0.233 at 2023-09-08 13:04:19 +0000
+I, [2023-09-08T13:04:19.652350 #251]  INFO -- : [bfe65709-9fea-4f3c-b232-7234e72a763b] Processing by CustomFieldsController#index as HTML
+I, [2023-09-08T13:04:19.660263 #251]  INFO -- : [bfe65709-9fea-4f3c-b232-7234e72a763b]   Current user: admin (id=1)
+I, [2023-09-08T13:04:19.704682 #251]  INFO -- : [bfe65709-9fea-4f3c-b232-7234e72a763b]   Rendered custom_fields/index.html.erb within layouts/admin (Duration: 35.6ms | Allocations: 3759)
+I, [2023-09-08T13:04:19.727680 #251]  INFO -- : [bfe65709-9fea-4f3c-b232-7234e72a763b]   Rendered layouts/base.html.erb (Duration: 18.1ms | Allocations: 4657)
+I, [2023-09-08T13:04:19.727889 #251]  INFO -- : [bfe65709-9fea-4f3c-b232-7234e72a763b]   Rendered layout layouts/admin.html.erb (Duration: 58.9ms | Allocations: 10111)
+I, [2023-09-08T13:04:19.728256 #251]  INFO -- : [bfe65709-9fea-4f3c-b232-7234e72a763b] Completed 200 OK in 76ms (Views: 57.3ms | ActiveRecord: 7.1ms | Allocations: 12399)
+I, [2023-09-08T13:07:27.352619 #253]  INFO -- : [31f8ae87-6092-442f-b411-0f9820ff39ef] Started GET "/enumerations" for 172.16.0.233 at 2023-09-08 13:07:27 +0000
+I, [2023-09-08T13:07:27.354366 #253]  INFO -- : [31f8ae87-6092-442f-b411-0f9820ff39ef] Processing by EnumerationsController#index as HTML
+I, [2023-09-08T13:07:27.368083 #253]  INFO -- : [31f8ae87-6092-442f-b411-0f9820ff39ef]   Current user: admin (id=1)
+I, [2023-09-08T13:07:27.402352 #253]  INFO -- : [31f8ae87-6092-442f-b411-0f9820ff39ef]   Rendered enumerations/index.html.erb within layouts/admin (Duration: 31.1ms | Allocations: 4431)
+I, [2023-09-08T13:07:27.428788 #253]  INFO -- : [31f8ae87-6092-442f-b411-0f9820ff39ef]   Rendered layouts/base.html.erb (Duration: 21.0ms | Allocations: 4654)
+I, [2023-09-08T13:07:27.428979 #253]  INFO -- : [31f8ae87-6092-442f-b411-0f9820ff39ef]   Rendered layout layouts/admin.html.erb (Duration: 57.8ms | Allocations: 10774)
+I, [2023-09-08T13:07:27.429457 #253]  INFO -- : [31f8ae87-6092-442f-b411-0f9820ff39ef] Completed 200 OK in 75ms (Views: 48.2ms | ActiveRecord: 17.7ms | Allocations: 12441)
+I, [2023-09-08T13:07:30.169952 #251]  INFO -- : [cf2008c2-c871-4d86-9ae8-8b5a4e4603b3] Started GET "/settings" for 172.16.0.233 at 2023-09-08 13:07:30 +0000
+I, [2023-09-08T13:07:30.171494 #251]  INFO -- : [cf2008c2-c871-4d86-9ae8-8b5a4e4603b3] Processing by SettingsController#index as HTML
+I, [2023-09-08T13:07:30.181075 #251]  INFO -- : [cf2008c2-c871-4d86-9ae8-8b5a4e4603b3]   Current user: admin (id=1)
+I, [2023-09-08T13:07:31.047419 #251]  INFO -- : [cf2008c2-c871-4d86-9ae8-8b5a4e4603b3]   Rendered settings/edit.html.erb within layouts/admin (Duration: 859.2ms | Allocations: 217165)
+I, [2023-09-08T13:07:31.066929 #251]  INFO -- : [cf2008c2-c871-4d86-9ae8-8b5a4e4603b3]   Rendered layouts/base.html.erb (Duration: 14.9ms | Allocations: 4189)
+I, [2023-09-08T13:07:31.067139 #251]  INFO -- : [cf2008c2-c871-4d86-9ae8-8b5a4e4603b3]   Rendered layout layouts/admin.html.erb (Duration: 879.0ms | Allocations: 223033)
+I, [2023-09-08T13:07:31.067575 #251]  INFO -- : [cf2008c2-c871-4d86-9ae8-8b5a4e4603b3] Completed 200 OK in 896ms (Views: 758.4ms | ActiveRecord: 127.6ms | Allocations: 225024)
+I, [2023-09-08T13:07:33.265827 #253]  INFO -- : [140930f9-f64a-4528-8c05-5a1bbc55793a] Started GET "/enumerations" for 172.16.0.233 at 2023-09-08 13:07:33 +0000
+I, [2023-09-08T13:07:33.267066 #253]  INFO -- : [140930f9-f64a-4528-8c05-5a1bbc55793a] Processing by EnumerationsController#index as HTML
+I, [2023-09-08T13:07:33.275568 #253]  INFO -- : [140930f9-f64a-4528-8c05-5a1bbc55793a]   Current user: admin (id=1)
+I, [2023-09-08T13:07:33.295615 #253]  INFO -- : [140930f9-f64a-4528-8c05-5a1bbc55793a]   Rendered enumerations/index.html.erb within layouts/admin (Duration: 18.7ms | Allocations: 3879)
+I, [2023-09-08T13:07:33.318323 #253]  INFO -- : [140930f9-f64a-4528-8c05-5a1bbc55793a]   Rendered layouts/base.html.erb (Duration: 17.8ms | Allocations: 4616)
+I, [2023-09-08T13:07:33.318481 #253]  INFO -- : [140930f9-f64a-4528-8c05-5a1bbc55793a]   Rendered layout layouts/admin.html.erb (Duration: 41.7ms | Allocations: 10168)
+I, [2023-09-08T13:07:33.318887 #253]  INFO -- : [140930f9-f64a-4528-8c05-5a1bbc55793a] Completed 200 OK in 52ms (Views: 33.3ms | ActiveRecord: 12.0ms | Allocations: 11308)
+I, [2023-09-08T13:07:34.855617 #253]  INFO -- : [83c492b9-643e-452a-bb63-f4dcf07a5324] Started GET "/custom_fields" for 172.16.0.233 at 2023-09-08 13:07:34 +0000
+I, [2023-09-08T13:07:34.856793 #253]  INFO -- : [83c492b9-643e-452a-bb63-f4dcf07a5324] Processing by CustomFieldsController#index as HTML
+I, [2023-09-08T13:07:34.865108 #253]  INFO -- : [83c492b9-643e-452a-bb63-f4dcf07a5324]   Current user: admin (id=1)
+I, [2023-09-08T13:07:34.884255 #253]  INFO -- : [83c492b9-643e-452a-bb63-f4dcf07a5324]   Rendered custom_fields/index.html.erb within layouts/admin (Duration: 10.4ms | Allocations: 3359)
+I, [2023-09-08T13:07:34.908134 #253]  INFO -- : [83c492b9-643e-452a-bb63-f4dcf07a5324]   Rendered layouts/base.html.erb (Duration: 19.2ms | Allocations: 4645)
+I, [2023-09-08T13:07:34.908300 #253]  INFO -- : [83c492b9-643e-452a-bb63-f4dcf07a5324]   Rendered layout layouts/admin.html.erb (Duration: 34.5ms | Allocations: 9699)
+I, [2023-09-08T13:07:34.908780 #253]  INFO -- : [83c492b9-643e-452a-bb63-f4dcf07a5324] Completed 200 OK in 52ms (Views: 31.6ms | ActiveRecord: 10.3ms | Allocations: 11985)
+I, [2023-09-08T13:11:16.895700 #253]  INFO -- : [5d9ae083-b764-44df-8e9d-c172346ec156] Started GET "/" for 172.16.0.233 at 2023-09-08 13:11:16 +0000
+I, [2023-09-08T13:11:16.897472 #253]  INFO -- : [5d9ae083-b764-44df-8e9d-c172346ec156] Processing by WelcomeController#index as HTML
+I, [2023-09-08T13:11:16.911600 #253]  INFO -- : [5d9ae083-b764-44df-8e9d-c172346ec156]   Current user: admin (id=1)
+I, [2023-09-08T13:11:16.933064 #253]  INFO -- : [5d9ae083-b764-44df-8e9d-c172346ec156]   Rendered welcome/index.html.erb within layouts/base (Duration: 12.8ms | Allocations: 2696)
+I, [2023-09-08T13:11:16.949618 #253]  INFO -- : [5d9ae083-b764-44df-8e9d-c172346ec156]   Rendered layout layouts/base.html.erb (Duration: 29.4ms | Allocations: 7173)
+I, [2023-09-08T13:11:16.950077 #253]  INFO -- : [5d9ae083-b764-44df-8e9d-c172346ec156] Completed 200 OK in 52ms (Views: 27.1ms | ActiveRecord: 11.7ms | Allocations: 9307)
+I, [2023-09-08T13:11:24.230309 #251]  INFO -- : [ea133cfb-7ec4-4199-b682-54ef647240dd] Started GET "/search?utf8=%E2%9C%93&scope=&q=netflix" for 172.16.0.233 at 2023-09-08 13:11:24 +0000
+I, [2023-09-08T13:11:24.232314 #251]  INFO -- : [ea133cfb-7ec4-4199-b682-54ef647240dd] Processing by SearchController#index as HTML
+I, [2023-09-08T13:11:24.232427 #251]  INFO -- : [ea133cfb-7ec4-4199-b682-54ef647240dd]   Parameters: {"utf8"=>"✓", "scope"=>"", "q"=>"netflix"}
+I, [2023-09-08T13:11:24.241777 #251]  INFO -- : [ea133cfb-7ec4-4199-b682-54ef647240dd]   Current user: admin (id=1)
+I, [2023-09-08T13:11:25.227733 #251]  INFO -- : [ea133cfb-7ec4-4199-b682-54ef647240dd]   Rendered search/index.html.erb within layouts/base (Duration: 17.2ms | Allocations: 3620)
+I, [2023-09-08T13:11:25.256679 #251]  INFO -- : [ea133cfb-7ec4-4199-b682-54ef647240dd]   Rendered layout layouts/base.html.erb (Duration: 46.3ms | Allocations: 10388)
+I, [2023-09-08T13:11:25.257150 #251]  INFO -- : [ea133cfb-7ec4-4199-b682-54ef647240dd] Completed 200 OK in 1025ms (Views: 41.1ms | ActiveRecord: 940.4ms | Allocations: 19159)
+I, [2023-09-08T13:14:07.685118 #253]  INFO -- : [4647ed18-0e27-447f-ac7f-065b7b7ba2f7] Started GET "/" for 172.16.0.233 at 2023-09-08 13:14:07 +0000
+I, [2023-09-08T13:14:07.686823 #253]  INFO -- : [4647ed18-0e27-447f-ac7f-065b7b7ba2f7] Processing by WelcomeController#index as HTML
+I, [2023-09-08T13:14:07.701820 #253]  INFO -- : [4647ed18-0e27-447f-ac7f-065b7b7ba2f7]   Current user: admin (id=1)
+I, [2023-09-08T13:14:07.724599 #253]  INFO -- : [4647ed18-0e27-447f-ac7f-065b7b7ba2f7]   Rendered welcome/index.html.erb within layouts/base (Duration: 13.4ms | Allocations: 2675)
+I, [2023-09-08T13:14:07.741256 #253]  INFO -- : [4647ed18-0e27-447f-ac7f-065b7b7ba2f7]   Rendered layout layouts/base.html.erb (Duration: 30.1ms | Allocations: 7112)
+I, [2023-09-08T13:14:07.741828 #253]  INFO -- : [4647ed18-0e27-447f-ac7f-065b7b7ba2f7] Completed 200 OK in 55ms (Views: 26.1ms | ActiveRecord: 14.7ms | Allocations: 9245)
+I, [2023-09-08T13:14:11.736545 #253]  INFO -- : [e6d2b206-c96b-4c5a-ba2a-89c75aca0d02] Started GET "/admin" for 172.16.0.233 at 2023-09-08 13:14:11 +0000
+I, [2023-09-08T13:14:11.737596 #253]  INFO -- : [e6d2b206-c96b-4c5a-ba2a-89c75aca0d02] Processing by AdminController#index as HTML
+I, [2023-09-08T13:14:11.746172 #253]  INFO -- : [e6d2b206-c96b-4c5a-ba2a-89c75aca0d02]   Current user: admin (id=1)
+I, [2023-09-08T13:14:11.753996 #253]  INFO -- : [e6d2b206-c96b-4c5a-ba2a-89c75aca0d02]   Rendered admin/index.html.erb within layouts/admin (Duration: 4.9ms | Allocations: 1626)
+I, [2023-09-08T13:14:11.772142 #253]  INFO -- : [e6d2b206-c96b-4c5a-ba2a-89c75aca0d02]   Rendered layouts/base.html.erb (Duration: 17.9ms | Allocations: 4642)
+I, [2023-09-08T13:14:11.772305 #253]  INFO -- : [e6d2b206-c96b-4c5a-ba2a-89c75aca0d02]   Rendered layout layouts/admin.html.erb (Duration: 23.3ms | Allocations: 6355)
+I, [2023-09-08T13:14:11.772720 #253]  INFO -- : [e6d2b206-c96b-4c5a-ba2a-89c75aca0d02] Completed 200 OK in 35ms (Views: 20.6ms | ActiveRecord: 7.9ms | Allocations: 7582)
+I, [2023-09-08T13:14:14.407258 #253]  INFO -- : [c475d4d2-e788-40e7-bb76-a1046cf856d4] Started GET "/projects" for 172.16.0.233 at 2023-09-08 13:14:14 +0000
+I, [2023-09-08T13:14:14.408401 #253]  INFO -- : [c475d4d2-e788-40e7-bb76-a1046cf856d4] Processing by ProjectsController#index as HTML
+I, [2023-09-08T13:14:14.416716 #253]  INFO -- : [c475d4d2-e788-40e7-bb76-a1046cf856d4]   Current user: admin (id=1)
+I, [2023-09-08T13:14:14.787715 #253]  INFO -- : [c475d4d2-e788-40e7-bb76-a1046cf856d4]   Rendered projects/index.html.erb within layouts/base (Duration: 338.9ms | Allocations: 113772)
+I, [2023-09-08T13:14:14.813134 #253]  INFO -- : [c475d4d2-e788-40e7-bb76-a1046cf856d4]   Rendered layout layouts/base.html.erb (Duration: 364.5ms | Allocations: 119840)
+I, [2023-09-08T13:14:14.813513 #253]  INFO -- : [c475d4d2-e788-40e7-bb76-a1046cf856d4] Completed 200 OK in 405ms (Views: 354.7ms | ActiveRecord: 23.8ms | Allocations: 127602)
+I, [2023-09-08T13:14:20.658384 #253]  INFO -- : [2535097c-fcfb-4cb7-9afb-2e7afdcc157c] Started GET "/projects/ai-products" for 172.16.0.233 at 2023-09-08 13:14:20 +0000
+I, [2023-09-08T13:14:20.659429 #253]  INFO -- : [2535097c-fcfb-4cb7-9afb-2e7afdcc157c] Processing by ProjectsController#show as HTML
+I, [2023-09-08T13:14:20.659526 #253]  INFO -- : [2535097c-fcfb-4cb7-9afb-2e7afdcc157c]   Parameters: {"id"=>"ai-products"}
+I, [2023-09-08T13:14:20.667800 #253]  INFO -- : [2535097c-fcfb-4cb7-9afb-2e7afdcc157c]   Current user: admin (id=1)
+I, [2023-09-08T13:14:20.746922 #253]  INFO -- : [2535097c-fcfb-4cb7-9afb-2e7afdcc157c]   Rendered projects/show.html.erb within layouts/base (Duration: 24.7ms | Allocations: 6189)
+I, [2023-09-08T13:14:20.783404 #253]  INFO -- : [2535097c-fcfb-4cb7-9afb-2e7afdcc157c]   Rendered layout layouts/base.html.erb (Duration: 61.2ms | Allocations: 15143)
+I, [2023-09-08T13:14:20.794512 #253]  INFO -- : [2535097c-fcfb-4cb7-9afb-2e7afdcc157c] Completed 200 OK in 135ms (Views: 47.6ms | ActiveRecord: 51.5ms | Allocations: 24356)
+I, [2023-09-08T13:14:22.579533 #253]  INFO -- : [09caac37-1447-4a80-8d38-8d4e1007ea98] Started GET "/projects/ai-products/wiki" for 172.16.0.233 at 2023-09-08 13:14:22 +0000
+I, [2023-09-08T13:14:22.580714 #253]  INFO -- : [09caac37-1447-4a80-8d38-8d4e1007ea98] Processing by WikiController#show as HTML
+I, [2023-09-08T13:14:22.580803 #253]  INFO -- : [09caac37-1447-4a80-8d38-8d4e1007ea98]   Parameters: {"project_id"=>"ai-products"}
+I, [2023-09-08T13:14:22.588799 #253]  INFO -- : [09caac37-1447-4a80-8d38-8d4e1007ea98]   Current user: admin (id=1)
+I, [2023-09-08T13:14:22.676143 #253]  INFO -- : [09caac37-1447-4a80-8d38-8d4e1007ea98]   Rendered wiki/show.html.erb within layouts/base (Duration: 67.7ms | Allocations: 16862)
+I, [2023-09-08T13:14:22.710439 #253]  INFO -- : [09caac37-1447-4a80-8d38-8d4e1007ea98]   Rendered layout layouts/base.html.erb (Duration: 102.1ms | Allocations: 25893)
+I, [2023-09-08T13:14:22.711023 #253]  INFO -- : [09caac37-1447-4a80-8d38-8d4e1007ea98] Completed 200 OK in 130ms (Views: 83.5ms | ActiveRecord: 31.4ms | Allocations: 29360)
+I, [2023-09-08T13:14:27.427858 #253]  INFO -- : [2974c177-1d45-4126-9803-44ee05aff686] Started GET "/projects" for 172.16.0.233 at 2023-09-08 13:14:27 +0000
+I, [2023-09-08T13:14:27.428925 #253]  INFO -- : [2974c177-1d45-4126-9803-44ee05aff686] Processing by ProjectsController#index as HTML
+I, [2023-09-08T13:14:27.437225 #253]  INFO -- : [2974c177-1d45-4126-9803-44ee05aff686]   Current user: admin (id=1)
+I, [2023-09-08T13:14:27.789402 #253]  INFO -- : [2974c177-1d45-4126-9803-44ee05aff686]   Rendered projects/index.html.erb within layouts/base (Duration: 324.8ms | Allocations: 113724)
+I, [2023-09-08T13:14:27.816008 #253]  INFO -- : [2974c177-1d45-4126-9803-44ee05aff686]   Rendered layout layouts/base.html.erb (Duration: 351.5ms | Allocations: 119752)
+I, [2023-09-08T13:14:27.816377 #253]  INFO -- : [2974c177-1d45-4126-9803-44ee05aff686] Completed 200 OK in 387ms (Views: 339.3ms | ActiveRecord: 25.9ms | Allocations: 127513)
+I, [2023-09-08T13:14:36.512796 #253]  INFO -- : [2a33f1d9-d7d4-4656-a071-0a2bbe97aa4f] Started GET "/projects/html-template" for 172.16.0.233 at 2023-09-08 13:14:36 +0000
+I, [2023-09-08T13:14:36.513814 #253]  INFO -- : [2a33f1d9-d7d4-4656-a071-0a2bbe97aa4f] Processing by ProjectsController#show as HTML
+I, [2023-09-08T13:14:36.513899 #253]  INFO -- : [2a33f1d9-d7d4-4656-a071-0a2bbe97aa4f]   Parameters: {"id"=>"html-template"}
+I, [2023-09-08T13:14:36.522299 #253]  INFO -- : [2a33f1d9-d7d4-4656-a071-0a2bbe97aa4f]   Current user: admin (id=1)
+I, [2023-09-08T13:14:36.616076 #253]  INFO -- : [2a33f1d9-d7d4-4656-a071-0a2bbe97aa4f]   Rendered projects/show.html.erb within layouts/base (Duration: 22.2ms | Allocations: 5584)
+I, [2023-09-08T13:14:36.656029 #253]  INFO -- : [2a33f1d9-d7d4-4656-a071-0a2bbe97aa4f]   Rendered layout layouts/base.html.erb (Duration: 62.2ms | Allocations: 14613)
+I, [2023-09-08T13:14:36.667240 #253]  INFO -- : [2a33f1d9-d7d4-4656-a071-0a2bbe97aa4f] Completed 200 OK in 153ms (Views: 47.4ms | ActiveRecord: 77.3ms | Allocations: 21708)
+I, [2023-09-08T13:14:55.146135 #253]  INFO -- : [0b6186c3-6098-46af-a660-9ad5def3627d] Started GET "/projects/nexle-training-and-support" for 172.16.0.233 at 2023-09-08 13:14:55 +0000
+I, [2023-09-08T13:14:55.147714 #253]  INFO -- : [0b6186c3-6098-46af-a660-9ad5def3627d] Processing by ProjectsController#show as HTML
+I, [2023-09-08T13:14:55.147812 #253]  INFO -- : [0b6186c3-6098-46af-a660-9ad5def3627d]   Parameters: {"id"=>"nexle-training-and-support"}
+I, [2023-09-08T13:14:55.158701 #253]  INFO -- : [0b6186c3-6098-46af-a660-9ad5def3627d]   Current user: admin (id=1)
+I, [2023-09-08T13:14:55.258613 #253]  INFO -- : [0b6186c3-6098-46af-a660-9ad5def3627d]   Rendered projects/show.html.erb within layouts/base (Duration: 24.2ms | Allocations: 6012)
+I, [2023-09-08T13:14:55.295964 #253]  INFO -- : [0b6186c3-6098-46af-a660-9ad5def3627d]   Rendered layout layouts/base.html.erb (Duration: 61.6ms | Allocations: 14952)
+I, [2023-09-08T13:14:55.305806 #253]  INFO -- : [0b6186c3-6098-46af-a660-9ad5def3627d] Completed 200 OK in 158ms (Views: 49.6ms | ActiveRecord: 74.5ms | Allocations: 22323)
+I, [2023-09-08T13:15:05.353133 #253]  INFO -- : [81e6a625-0542-4497-8a48-2bd67c0aabd5] Started GET "/projects/bubble-spa" for 172.16.0.233 at 2023-09-08 13:15:05 +0000
+I, [2023-09-08T13:15:05.354209 #253]  INFO -- : [81e6a625-0542-4497-8a48-2bd67c0aabd5] Processing by ProjectsController#show as HTML
+I, [2023-09-08T13:15:05.354296 #253]  INFO -- : [81e6a625-0542-4497-8a48-2bd67c0aabd5]   Parameters: {"id"=>"bubble-spa"}
+I, [2023-09-08T13:15:05.363014 #253]  INFO -- : [81e6a625-0542-4497-8a48-2bd67c0aabd5]   Current user: admin (id=1)
+I, [2023-09-08T13:15:05.499353 #253]  INFO -- : [81e6a625-0542-4497-8a48-2bd67c0aabd5]   Rendered projects/show.html.erb within layouts/base (Duration: 40.8ms | Allocations: 11069)
+I, [2023-09-08T13:15:05.536479 #253]  INFO -- : [81e6a625-0542-4497-8a48-2bd67c0aabd5]   Rendered layout layouts/base.html.erb (Duration: 78.0ms | Allocations: 20009)
+I, [2023-09-08T13:15:05.546556 #253]  INFO -- : [81e6a625-0542-4497-8a48-2bd67c0aabd5] Completed 200 OK in 192ms (Views: 65.8ms | ActiveRecord: 84.9ms | Allocations: 30792)
+I, [2023-09-08T13:15:07.279066 #253]  INFO -- : [c2db02df-f3c6-43cc-b06c-34576d12bc75] Started GET "/projects/bubble-spa/wiki" for 172.16.0.233 at 2023-09-08 13:15:07 +0000
+I, [2023-09-08T13:15:07.280305 #253]  INFO -- : [c2db02df-f3c6-43cc-b06c-34576d12bc75] Processing by WikiController#show as HTML
+I, [2023-09-08T13:15:07.280393 #253]  INFO -- : [c2db02df-f3c6-43cc-b06c-34576d12bc75]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:15:07.292526 #253]  INFO -- : [c2db02df-f3c6-43cc-b06c-34576d12bc75]   Current user: admin (id=1)
+I, [2023-09-08T13:15:07.383173 #253]  INFO -- : [c2db02df-f3c6-43cc-b06c-34576d12bc75]   Rendered wiki/show.html.erb within layouts/base (Duration: 71.9ms | Allocations: 15694)
+I, [2023-09-08T13:15:07.419866 #253]  INFO -- : [c2db02df-f3c6-43cc-b06c-34576d12bc75]   Rendered layout layouts/base.html.erb (Duration: 108.6ms | Allocations: 24676)
+I, [2023-09-08T13:15:07.420374 #253]  INFO -- : [c2db02df-f3c6-43cc-b06c-34576d12bc75] Completed 200 OK in 140ms (Views: 87.7ms | ActiveRecord: 36.1ms | Allocations: 28285)
+I, [2023-09-08T13:15:10.164930 #251]  INFO -- : [e7176a3b-3cf9-42b5-a9b3-11b003700510] Started GET "/projects/bubble-spa/wiki/index" for 172.16.0.233 at 2023-09-08 13:15:10 +0000
+I, [2023-09-08T13:15:10.166796 #251]  INFO -- : [e7176a3b-3cf9-42b5-a9b3-11b003700510] Processing by WikiController#index as HTML
+I, [2023-09-08T13:15:10.166885 #251]  INFO -- : [e7176a3b-3cf9-42b5-a9b3-11b003700510]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:15:10.176497 #251]  INFO -- : [e7176a3b-3cf9-42b5-a9b3-11b003700510]   Current user: admin (id=1)
+I, [2023-09-08T13:15:10.254696 #251]  INFO -- : [e7176a3b-3cf9-42b5-a9b3-11b003700510]   Rendered wiki/index.html.erb within layouts/base (Duration: 52.2ms | Allocations: 6613)
+I, [2023-09-08T13:15:10.293399 #251]  INFO -- : [e7176a3b-3cf9-42b5-a9b3-11b003700510]   Rendered layout layouts/base.html.erb (Duration: 90.9ms | Allocations: 15842)
+I, [2023-09-08T13:15:10.293975 #251]  INFO -- : [e7176a3b-3cf9-42b5-a9b3-11b003700510] Completed 200 OK in 127ms (Views: 78.4ms | ActiveRecord: 26.9ms | Allocations: 19964)
+I, [2023-09-08T13:15:11.860890 #251]  INFO -- : [1f8eb9f8-efa9-4891-8c6a-01c172f68712] Started GET "/projects/bubble-spa/wiki/CICD" for 172.16.0.233 at 2023-09-08 13:15:11 +0000
+I, [2023-09-08T13:15:11.861979 #251]  INFO -- : [1f8eb9f8-efa9-4891-8c6a-01c172f68712] Processing by WikiController#show as HTML
+I, [2023-09-08T13:15:11.862088 #251]  INFO -- : [1f8eb9f8-efa9-4891-8c6a-01c172f68712]   Parameters: {"project_id"=>"bubble-spa", "id"=>"CICD"}
+I, [2023-09-08T13:15:11.871269 #251]  INFO -- : [1f8eb9f8-efa9-4891-8c6a-01c172f68712]   Current user: admin (id=1)
+I, [2023-09-08T13:15:11.951760 #251]  INFO -- : [1f8eb9f8-efa9-4891-8c6a-01c172f68712]   Rendered wiki/show.html.erb within layouts/base (Duration: 58.4ms | Allocations: 11308)
+I, [2023-09-08T13:15:11.988370 #251]  INFO -- : [1f8eb9f8-efa9-4891-8c6a-01c172f68712]   Rendered layout layouts/base.html.erb (Duration: 95.0ms | Allocations: 20442)
+I, [2023-09-08T13:15:11.988912 #251]  INFO -- : [1f8eb9f8-efa9-4891-8c6a-01c172f68712] Completed 200 OK in 127ms (Views: 76.2ms | ActiveRecord: 31.6ms | Allocations: 24594)
+I, [2023-09-08T13:15:14.192043 #253]  INFO -- : [f7e1449e-cad5-4f03-ab70-2ba907a4ffe7] Started GET "/projects/bubble-spa/wiki/index" for 172.16.0.233 at 2023-09-08 13:15:14 +0000
+I, [2023-09-08T13:15:14.193152 #253]  INFO -- : [f7e1449e-cad5-4f03-ab70-2ba907a4ffe7] Processing by WikiController#index as HTML
+I, [2023-09-08T13:15:14.193239 #253]  INFO -- : [f7e1449e-cad5-4f03-ab70-2ba907a4ffe7]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:15:14.201495 #253]  INFO -- : [f7e1449e-cad5-4f03-ab70-2ba907a4ffe7]   Current user: admin (id=1)
+I, [2023-09-08T13:15:14.252902 #253]  INFO -- : [f7e1449e-cad5-4f03-ab70-2ba907a4ffe7]   Rendered wiki/index.html.erb within layouts/base (Duration: 28.4ms | Allocations: 6199)
+I, [2023-09-08T13:15:14.291225 #253]  INFO -- : [f7e1449e-cad5-4f03-ab70-2ba907a4ffe7]   Rendered layout layouts/base.html.erb (Duration: 66.8ms | Allocations: 15428)
+I, [2023-09-08T13:15:14.291775 #253]  INFO -- : [f7e1449e-cad5-4f03-ab70-2ba907a4ffe7] Completed 200 OK in 98ms (Views: 54.5ms | ActiveRecord: 26.2ms | Allocations: 19524)
+I, [2023-09-08T13:15:16.106819 #251]  INFO -- : [17255000-971b-4420-92b1-4d2ed0b0b9fa] Started GET "/projects/bubble-spa/wiki/Th%C3%B4ng_tin_Production" for 172.16.0.233 at 2023-09-08 13:15:16 +0000
+I, [2023-09-08T13:15:16.107977 #251]  INFO -- : [17255000-971b-4420-92b1-4d2ed0b0b9fa] Processing by WikiController#show as HTML
+I, [2023-09-08T13:15:16.108087 #251]  INFO -- : [17255000-971b-4420-92b1-4d2ed0b0b9fa]   Parameters: {"project_id"=>"bubble-spa", "id"=>"Thông_tin_Production"}
+I, [2023-09-08T13:15:16.116733 #251]  INFO -- : [17255000-971b-4420-92b1-4d2ed0b0b9fa]   Current user: admin (id=1)
+I, [2023-09-08T13:15:16.174199 #251]  INFO -- : [17255000-971b-4420-92b1-4d2ed0b0b9fa]   Rendered wiki/show.html.erb within layouts/base (Duration: 37.1ms | Allocations: 7313)
+I, [2023-09-08T13:15:16.212154 #251]  INFO -- : [17255000-971b-4420-92b1-4d2ed0b0b9fa]   Rendered layout layouts/base.html.erb (Duration: 75.1ms | Allocations: 16398)
+I, [2023-09-08T13:15:16.212691 #251]  INFO -- : [17255000-971b-4420-92b1-4d2ed0b0b9fa] Completed 200 OK in 104ms (Views: 58.7ms | ActiveRecord: 29.1ms | Allocations: 19876)
+I, [2023-09-08T13:15:18.813554 #251]  INFO -- : [3d21ad35-ae08-4d4d-9728-4106e46bbc49] Started GET "/projects/bubble-spa/wiki/index" for 172.16.0.233 at 2023-09-08 13:15:18 +0000
+I, [2023-09-08T13:15:18.814704 #251]  INFO -- : [3d21ad35-ae08-4d4d-9728-4106e46bbc49] Processing by WikiController#index as HTML
+I, [2023-09-08T13:15:18.814793 #251]  INFO -- : [3d21ad35-ae08-4d4d-9728-4106e46bbc49]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:15:18.821991 #251]  INFO -- : [3d21ad35-ae08-4d4d-9728-4106e46bbc49]   Current user: admin (id=1)
+I, [2023-09-08T13:15:18.873923 #251]  INFO -- : [3d21ad35-ae08-4d4d-9728-4106e46bbc49]   Rendered wiki/index.html.erb within layouts/base (Duration: 24.7ms | Allocations: 5700)
+I, [2023-09-08T13:15:18.908668 #251]  INFO -- : [3d21ad35-ae08-4d4d-9728-4106e46bbc49]   Rendered layout layouts/base.html.erb (Duration: 59.5ms | Allocations: 14894)
+I, [2023-09-08T13:15:18.909154 #251]  INFO -- : [3d21ad35-ae08-4d4d-9728-4106e46bbc49] Completed 200 OK in 94ms (Views: 58.9ms | ActiveRecord: 17.5ms | Allocations: 18826)
+I, [2023-09-08T13:15:20.736799 #251]  INFO -- : [a3728f6a-61b1-4f66-baa0-e7da476ee154] Started GET "/projects/bubble-spa/wiki/Th%C3%B4ng_tin_Dev" for 172.16.0.233 at 2023-09-08 13:15:20 +0000
+I, [2023-09-08T13:15:20.737939 #251]  INFO -- : [a3728f6a-61b1-4f66-baa0-e7da476ee154] Processing by WikiController#show as HTML
+I, [2023-09-08T13:15:20.738036 #251]  INFO -- : [a3728f6a-61b1-4f66-baa0-e7da476ee154]   Parameters: {"project_id"=>"bubble-spa", "id"=>"Thông_tin_Dev"}
+I, [2023-09-08T13:15:20.744947 #251]  INFO -- : [a3728f6a-61b1-4f66-baa0-e7da476ee154]   Current user: admin (id=1)
+I, [2023-09-08T13:15:20.791205 #251]  INFO -- : [a3728f6a-61b1-4f66-baa0-e7da476ee154]   Rendered wiki/show.html.erb within layouts/base (Duration: 31.0ms | Allocations: 7285)
+I, [2023-09-08T13:15:20.823737 #251]  INFO -- : [a3728f6a-61b1-4f66-baa0-e7da476ee154]   Rendered layout layouts/base.html.erb (Duration: 63.6ms | Allocations: 16370)
+I, [2023-09-08T13:15:20.824187 #251]  INFO -- : [a3728f6a-61b1-4f66-baa0-e7da476ee154] Completed 200 OK in 86ms (Views: 54.4ms | ActiveRecord: 17.0ms | Allocations: 19848)
+I, [2023-09-08T13:18:57.328964 #251]  INFO -- : [67ffe51e-5537-4745-afc4-9afb65d33c4d] Started GET "/projects/nexle-training-and-support/issues/calendar" for 172.16.0.233 at 2023-09-08 13:18:57 +0000
+I, [2023-09-08T13:18:57.331027 #251]  INFO -- : [67ffe51e-5537-4745-afc4-9afb65d33c4d] Processing by CalendarsController#show as HTML
+I, [2023-09-08T13:18:57.331125 #251]  INFO -- : [67ffe51e-5537-4745-afc4-9afb65d33c4d]   Parameters: {"project_id"=>"nexle-training-and-support"}
+I, [2023-09-08T13:18:57.344878 #251]  INFO -- : [67ffe51e-5537-4745-afc4-9afb65d33c4d]   Current user: admin (id=1)
+I, [2023-09-08T13:18:57.462355 #251]  INFO -- : [67ffe51e-5537-4745-afc4-9afb65d33c4d]   Rendered calendars/show.html.erb within layouts/base (Duration: 66.2ms | Allocations: 12856)
+I, [2023-09-08T13:18:57.503411 #251]  INFO -- : [67ffe51e-5537-4745-afc4-9afb65d33c4d]   Rendered layout layouts/base.html.erb (Duration: 107.4ms | Allocations: 21714)
+I, [2023-09-08T13:18:57.514177 #251]  INFO -- : [67ffe51e-5537-4745-afc4-9afb65d33c4d] Completed 200 OK in 183ms (Views: 83.8ms | ActiveRecord: 52.4ms | Allocations: 32490)
+I, [2023-09-08T13:18:59.391794 #251]  INFO -- : [c8baacbc-9e15-4af2-88b8-f2ef46132030] Started GET "/projects/nexle-training-and-support/issues/gantt" for 172.16.0.233 at 2023-09-08 13:18:59 +0000
+I, [2023-09-08T13:18:59.393100 #251]  INFO -- : [c8baacbc-9e15-4af2-88b8-f2ef46132030] Processing by GanttsController#show as HTML
+I, [2023-09-08T13:18:59.393193 #251]  INFO -- : [c8baacbc-9e15-4af2-88b8-f2ef46132030]   Parameters: {"project_id"=>"nexle-training-and-support"}
+I, [2023-09-08T13:18:59.401263 #251]  INFO -- : [c8baacbc-9e15-4af2-88b8-f2ef46132030]   Current user: admin (id=1)
+I, [2023-09-08T13:18:59.847602 #251]  INFO -- : [c8baacbc-9e15-4af2-88b8-f2ef46132030]   Rendered gantts/show.html.erb within layouts/base (Duration: 420.5ms | Allocations: 104959)
+I, [2023-09-08T13:18:59.884911 #251]  INFO -- : [c8baacbc-9e15-4af2-88b8-f2ef46132030]   Rendered layout layouts/base.html.erb (Duration: 457.9ms | Allocations: 113813)
+I, [2023-09-08T13:18:59.885484 #251]  INFO -- : [c8baacbc-9e15-4af2-88b8-f2ef46132030] Completed 200 OK in 492ms (Views: 375.0ms | ActiveRecord: 93.4ms | Allocations: 119590)
+I, [2023-09-08T13:19:01.077749 #253]  INFO -- : [1153e548-30dc-42d6-a6dc-2c3bb0aafe35] Started GET "/projects/nexle-training-and-support/time_entries" for 172.16.0.233 at 2023-09-08 13:19:01 +0000
+I, [2023-09-08T13:19:01.079630 #253]  INFO -- : [1153e548-30dc-42d6-a6dc-2c3bb0aafe35] Processing by TimelogController#index as HTML
+I, [2023-09-08T13:19:01.079788 #253]  INFO -- : [1153e548-30dc-42d6-a6dc-2c3bb0aafe35]   Parameters: {"project_id"=>"nexle-training-and-support"}
+I, [2023-09-08T13:19:01.090408 #253]  INFO -- : [1153e548-30dc-42d6-a6dc-2c3bb0aafe35]   Current user: admin (id=1)
+I, [2023-09-08T13:19:01.168778 #253]  INFO -- : [1153e548-30dc-42d6-a6dc-2c3bb0aafe35]   Rendered timelog/index.html.erb within layouts/base (Duration: 20.9ms | Allocations: 7364)
+I, [2023-09-08T13:19:01.208364 #253]  INFO -- : [1153e548-30dc-42d6-a6dc-2c3bb0aafe35]   Rendered layout layouts/base.html.erb (Duration: 60.5ms | Allocations: 16491)
+I, [2023-09-08T13:19:01.209000 #253]  INFO -- : [1153e548-30dc-42d6-a6dc-2c3bb0aafe35] Completed 200 OK in 129ms (Views: 49.4ms | ActiveRecord: 35.1ms | Allocations: 24055)
+I, [2023-09-08T13:19:09.736904 #251]  INFO -- : [b9ff7517-20bf-4de5-b202-698ee8db8a85] Started GET "/projects/bubble-spa/documents" for 172.16.0.233 at 2023-09-08 13:19:09 +0000
+I, [2023-09-08T13:19:09.738057 #251]  INFO -- : [b9ff7517-20bf-4de5-b202-698ee8db8a85] Processing by DocumentsController#index as HTML
+I, [2023-09-08T13:19:09.738144 #251]  INFO -- : [b9ff7517-20bf-4de5-b202-698ee8db8a85]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:19:09.747122 #251]  INFO -- : [b9ff7517-20bf-4de5-b202-698ee8db8a85]   Current user: admin (id=1)
+I, [2023-09-08T13:19:09.793147 #251]  INFO -- : [b9ff7517-20bf-4de5-b202-698ee8db8a85]   Rendered documents/index.html.erb within layouts/base (Duration: 23.0ms | Allocations: 5596)
+I, [2023-09-08T13:19:09.829300 #251]  INFO -- : [b9ff7517-20bf-4de5-b202-698ee8db8a85]   Rendered layout layouts/base.html.erb (Duration: 59.1ms | Allocations: 14560)
+I, [2023-09-08T13:19:09.840504 #251]  INFO -- : [b9ff7517-20bf-4de5-b202-698ee8db8a85] Completed 200 OK in 102ms (Views: 47.7ms | ActiveRecord: 31.2ms | Allocations: 19657)
+I, [2023-09-08T13:19:14.762423 #253]  INFO -- : [c43a02c3-c423-46e9-934c-0388b5777190] Started GET "/projects/bubble-spa/news" for 172.16.0.233 at 2023-09-08 13:19:14 +0000
+I, [2023-09-08T13:19:14.763524 #253]  INFO -- : [c43a02c3-c423-46e9-934c-0388b5777190] Processing by NewsController#index as HTML
+I, [2023-09-08T13:19:14.763627 #253]  INFO -- : [c43a02c3-c423-46e9-934c-0388b5777190]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:19:14.773113 #253]  INFO -- : [c43a02c3-c423-46e9-934c-0388b5777190]   Current user: admin (id=1)
+I, [2023-09-08T13:19:14.849039 #253]  INFO -- : [c43a02c3-c423-46e9-934c-0388b5777190]   Rendered news/index.html.erb within layouts/base (Duration: 57.2ms | Allocations: 11722)
+I, [2023-09-08T13:19:14.886372 #253]  INFO -- : [c43a02c3-c423-46e9-934c-0388b5777190]   Rendered layout layouts/base.html.erb (Duration: 94.5ms | Allocations: 20684)
+I, [2023-09-08T13:19:14.886951 #253]  INFO -- : [c43a02c3-c423-46e9-934c-0388b5777190] Completed 200 OK in 123ms (Views: 75.7ms | ActiveRecord: 31.8ms | Allocations: 24784)
+I, [2023-09-08T13:19:16.946705 #253]  INFO -- : [27744e34-0cd1-4f5f-8a16-d1bd37e19e50] Started GET "/projects/bubble-spa/issues/calendar" for 172.16.0.233 at 2023-09-08 13:19:16 +0000
+I, [2023-09-08T13:19:16.948264 #253]  INFO -- : [27744e34-0cd1-4f5f-8a16-d1bd37e19e50] Processing by CalendarsController#show as HTML
+I, [2023-09-08T13:19:16.948357 #253]  INFO -- : [27744e34-0cd1-4f5f-8a16-d1bd37e19e50]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:19:16.958943 #253]  INFO -- : [27744e34-0cd1-4f5f-8a16-d1bd37e19e50]   Current user: admin (id=1)
+I, [2023-09-08T13:19:17.197950 #253]  INFO -- : [27744e34-0cd1-4f5f-8a16-d1bd37e19e50]   Rendered calendars/show.html.erb within layouts/base (Duration: 52.4ms | Allocations: 13091)
+I, [2023-09-08T13:19:17.236269 #253]  INFO -- : [27744e34-0cd1-4f5f-8a16-d1bd37e19e50]   Rendered layout layouts/base.html.erb (Duration: 90.7ms | Allocations: 21947)
+I, [2023-09-08T13:19:17.236902 #253]  INFO -- : [27744e34-0cd1-4f5f-8a16-d1bd37e19e50] Completed 200 OK in 288ms (Views: 65.7ms | ActiveRecord: 176.8ms | Allocations: 31567)
+I, [2023-09-08T13:19:19.402790 #251]  INFO -- : [39512084-14d5-4b4a-9228-f6e3319d90af] Started GET "/projects/bubble-spa/issues/gantt" for 172.16.0.233 at 2023-09-08 13:19:19 +0000
+I, [2023-09-08T13:19:19.403889 #251]  INFO -- : [39512084-14d5-4b4a-9228-f6e3319d90af] Processing by GanttsController#show as HTML
+I, [2023-09-08T13:19:19.403976 #251]  INFO -- : [39512084-14d5-4b4a-9228-f6e3319d90af]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:19:19.412491 #251]  INFO -- : [39512084-14d5-4b4a-9228-f6e3319d90af]   Current user: admin (id=1)
+I, [2023-09-08T13:19:21.327427 #253]  INFO -- : [d6f70bc1-0af3-4584-98ff-1016555f1a26] Started GET "/projects/bubble-spa/issues/gantt" for 172.16.0.233 at 2023-09-08 13:19:21 +0000
+I, [2023-09-08T13:19:21.328592 #253]  INFO -- : [d6f70bc1-0af3-4584-98ff-1016555f1a26] Processing by GanttsController#show as HTML
+I, [2023-09-08T13:19:21.328759 #253]  INFO -- : [d6f70bc1-0af3-4584-98ff-1016555f1a26]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:19:21.337715 #253]  INFO -- : [d6f70bc1-0af3-4584-98ff-1016555f1a26]   Current user: admin (id=1)
+I, [2023-09-08T13:19:21.706617 #251]  INFO -- : [39512084-14d5-4b4a-9228-f6e3319d90af]   Rendered gantts/show.html.erb within layouts/base (Duration: 2267.3ms | Allocations: 512936)
+I, [2023-09-08T13:19:21.731172 #251]  INFO -- : [39512084-14d5-4b4a-9228-f6e3319d90af]   Rendered layout layouts/base.html.erb (Duration: 2291.9ms | Allocations: 521750)
+I, [2023-09-08T13:19:21.731498 #251]  INFO -- : [39512084-14d5-4b4a-9228-f6e3319d90af] Completed 200 OK in 2327ms (Views: 1702.5ms | ActiveRecord: 603.5ms | Allocations: 527175)
+I, [2023-09-08T13:19:22.442056 #251]  INFO -- : [86439bcc-e5cc-4927-8f18-03ca96d63ec0] Started GET "/projects/bubble-spa/issues/gantt" for 172.16.0.233 at 2023-09-08 13:19:22 +0000
+I, [2023-09-08T13:19:22.443455 #251]  INFO -- : [86439bcc-e5cc-4927-8f18-03ca96d63ec0] Processing by GanttsController#show as HTML
+I, [2023-09-08T13:19:22.443584 #251]  INFO -- : [86439bcc-e5cc-4927-8f18-03ca96d63ec0]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:19:22.454230 #251]  INFO -- : [86439bcc-e5cc-4927-8f18-03ca96d63ec0]   Current user: admin (id=1)
+I, [2023-09-08T13:19:23.130749 #253]  INFO -- : [d6f70bc1-0af3-4584-98ff-1016555f1a26]   Rendered gantts/show.html.erb within layouts/base (Duration: 1758.4ms | Allocations: 516770)
+I, [2023-09-08T13:19:23.154962 #253]  INFO -- : [d6f70bc1-0af3-4584-98ff-1016555f1a26]   Rendered layout layouts/base.html.erb (Duration: 1782.7ms | Allocations: 525622)
+I, [2023-09-08T13:19:23.155334 #253]  INFO -- : [d6f70bc1-0af3-4584-98ff-1016555f1a26] Completed 200 OK in 1826ms (Views: 1246.4ms | ActiveRecord: 555.1ms | Allocations: 531769)
+I, [2023-09-08T13:19:24.444026 #251]  INFO -- : [86439bcc-e5cc-4927-8f18-03ca96d63ec0]   Rendered gantts/show.html.erb within layouts/base (Duration: 1962.2ms | Allocations: 512936)
+I, [2023-09-08T13:19:24.481814 #251]  INFO -- : [86439bcc-e5cc-4927-8f18-03ca96d63ec0]   Rendered layout layouts/base.html.erb (Duration: 2000.0ms | Allocations: 521750)
+I, [2023-09-08T13:19:24.482314 #251]  INFO -- : [86439bcc-e5cc-4927-8f18-03ca96d63ec0] Completed 200 OK in 2039ms (Views: 1466.8ms | ActiveRecord: 549.1ms | Allocations: 527187)
+I, [2023-09-08T13:19:42.059533 #251]  INFO -- : [b3e1c554-c22a-4031-8c43-eb8b7fe62293] Started GET "/projects/nexle-training-and-support/roadmap" for 172.16.0.233 at 2023-09-08 13:19:42 +0000
+I, [2023-09-08T13:19:42.061398 #251]  INFO -- : [b3e1c554-c22a-4031-8c43-eb8b7fe62293] Processing by VersionsController#index as HTML
+I, [2023-09-08T13:19:42.061575 #251]  INFO -- : [b3e1c554-c22a-4031-8c43-eb8b7fe62293]   Parameters: {"project_id"=>"nexle-training-and-support"}
+I, [2023-09-08T13:19:42.072762 #251]  INFO -- : [b3e1c554-c22a-4031-8c43-eb8b7fe62293]   Current user: admin (id=1)
+I, [2023-09-08T13:19:42.236209 #251]  INFO -- : [b3e1c554-c22a-4031-8c43-eb8b7fe62293]   Rendered versions/index.html.erb within layouts/base (Duration: 101.6ms | Allocations: 16914)
+I, [2023-09-08T13:19:42.272484 #251]  INFO -- : [b3e1c554-c22a-4031-8c43-eb8b7fe62293]   Rendered layout layouts/base.html.erb (Duration: 138.0ms | Allocations: 25629)
+I, [2023-09-08T13:19:42.282736 #251]  INFO -- : [b3e1c554-c22a-4031-8c43-eb8b7fe62293] Completed 200 OK in 221ms (Views: 115.3ms | ActiveRecord: 64.2ms | Allocations: 35249)
+I, [2023-09-08T13:19:46.080015 #253]  INFO -- : [cecf0e1a-ce88-48a4-a444-8ef6b701ff4d] Started GET "/projects/nexle-training-and-support/time_entries" for 172.16.0.233 at 2023-09-08 13:19:46 +0000
+I, [2023-09-08T13:19:46.081904 #253]  INFO -- : [cecf0e1a-ce88-48a4-a444-8ef6b701ff4d] Processing by TimelogController#index as HTML
+I, [2023-09-08T13:19:46.082025 #253]  INFO -- : [cecf0e1a-ce88-48a4-a444-8ef6b701ff4d]   Parameters: {"project_id"=>"nexle-training-and-support"}
+I, [2023-09-08T13:19:46.092120 #253]  INFO -- : [cecf0e1a-ce88-48a4-a444-8ef6b701ff4d]   Current user: admin (id=1)
+I, [2023-09-08T13:19:46.160688 #253]  INFO -- : [cecf0e1a-ce88-48a4-a444-8ef6b701ff4d]   Rendered timelog/index.html.erb within layouts/base (Duration: 20.6ms | Allocations: 7358)
+I, [2023-09-08T13:19:46.198270 #253]  INFO -- : [cecf0e1a-ce88-48a4-a444-8ef6b701ff4d]   Rendered layout layouts/base.html.erb (Duration: 58.3ms | Allocations: 16485)
+I, [2023-09-08T13:19:46.198844 #253]  INFO -- : [cecf0e1a-ce88-48a4-a444-8ef6b701ff4d] Completed 200 OK in 117ms (Views: 48.5ms | ActiveRecord: 31.9ms | Allocations: 24045)
+I, [2023-09-08T13:20:18.330618 #251]  INFO -- : [f3525aea-9d9d-4819-af0a-4c0448547131] Started GET "/projects/bubble-spa/issues/calendar" for 172.16.0.233 at 2023-09-08 13:20:18 +0000
+I, [2023-09-08T13:20:18.331818 #251]  INFO -- : [f3525aea-9d9d-4819-af0a-4c0448547131] Processing by CalendarsController#show as HTML
+I, [2023-09-08T13:20:18.331904 #251]  INFO -- : [f3525aea-9d9d-4819-af0a-4c0448547131]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:20:18.344388 #251]  INFO -- : [f3525aea-9d9d-4819-af0a-4c0448547131]   Current user: admin (id=1)
+I, [2023-09-08T13:20:18.559015 #251]  INFO -- : [f3525aea-9d9d-4819-af0a-4c0448547131]   Rendered calendars/show.html.erb within layouts/base (Duration: 43.2ms | Allocations: 11395)
+I, [2023-09-08T13:20:18.596309 #251]  INFO -- : [f3525aea-9d9d-4819-af0a-4c0448547131]   Rendered layout layouts/base.html.erb (Duration: 80.5ms | Allocations: 20247)
+I, [2023-09-08T13:20:18.606841 #251]  INFO -- : [f3525aea-9d9d-4819-af0a-4c0448547131] Completed 200 OK in 275ms (Views: 57.0ms | ActiveRecord: 177.8ms | Allocations: 30372)
+I, [2023-09-08T13:20:42.832316 #251]  INFO -- : [7c30fcd4-36fc-449f-8e91-d7bc79c9e0fe] Started GET "/projects/bubble-spa/issues/calendar?utf8=%E2%9C%93&set_filter=1&calendar=1&f%5B%5D=status_id&op%5Bstatus_id%5D=o&f%5B%5D=&month=7&year=2023" for 172.16.0.233 at 2023-09-08 13:20:42 +0000
+I, [2023-09-08T13:20:42.834267 #251]  INFO -- : [7c30fcd4-36fc-449f-8e91-d7bc79c9e0fe] Processing by CalendarsController#show as HTML
+I, [2023-09-08T13:20:42.834396 #251]  INFO -- : [7c30fcd4-36fc-449f-8e91-d7bc79c9e0fe]   Parameters: {"utf8"=>"✓", "set_filter"=>"1", "calendar"=>"1", "f"=>["status_id", ""], "op"=>{"status_id"=>"o"}, "month"=>"7", "year"=>"2023", "project_id"=>"bubble-spa"}
+I, [2023-09-08T13:20:42.844107 #251]  INFO -- : [7c30fcd4-36fc-449f-8e91-d7bc79c9e0fe]   Current user: admin (id=1)
+I, [2023-09-08T13:20:43.359932 #251]  INFO -- : [7c30fcd4-36fc-449f-8e91-d7bc79c9e0fe]   Rendered calendars/show.html.erb within layouts/base (Duration: 279.3ms | Allocations: 77032)
+I, [2023-09-08T13:20:43.396496 #251]  INFO -- : [7c30fcd4-36fc-449f-8e91-d7bc79c9e0fe]   Rendered layout layouts/base.html.erb (Duration: 315.9ms | Allocations: 85846)
+I, [2023-09-08T13:20:43.397041 #251]  INFO -- : [7c30fcd4-36fc-449f-8e91-d7bc79c9e0fe] Completed 200 OK in 562ms (Views: 290.2ms | ActiveRecord: 189.5ms | Allocations: 105999)
+I, [2023-09-08T13:20:57.623820 #253]  INFO -- : [6ae4dcac-0829-4f37-8bcd-28eb732fc80c] Started GET "/projects/bubble-spa/issues/gantt" for 172.16.0.233 at 2023-09-08 13:20:57 +0000
+I, [2023-09-08T13:20:57.625198 #253]  INFO -- : [6ae4dcac-0829-4f37-8bcd-28eb732fc80c] Processing by GanttsController#show as HTML
+I, [2023-09-08T13:20:57.625286 #253]  INFO -- : [6ae4dcac-0829-4f37-8bcd-28eb732fc80c]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:20:57.634657 #253]  INFO -- : [6ae4dcac-0829-4f37-8bcd-28eb732fc80c]   Current user: admin (id=1)
+I, [2023-09-08T13:20:59.810954 #253]  INFO -- : [6ae4dcac-0829-4f37-8bcd-28eb732fc80c]   Rendered gantts/show.html.erb within layouts/base (Duration: 2147.1ms | Allocations: 512916)
+I, [2023-09-08T13:20:59.836978 #253]  INFO -- : [6ae4dcac-0829-4f37-8bcd-28eb732fc80c]   Rendered layout layouts/base.html.erb (Duration: 2173.2ms | Allocations: 521730)
+I, [2023-09-08T13:20:59.837299 #253]  INFO -- : [6ae4dcac-0829-4f37-8bcd-28eb732fc80c] Completed 200 OK in 2212ms (Views: 1604.0ms | ActiveRecord: 583.6ms | Allocations: 527151)
+I, [2023-09-08T13:21:02.977808 #253]  INFO -- : [3e0f8ad8-1f8e-46a9-8bd0-09b2d6d69457] Started GET "/projects/bubble-spa/time_entries" for 172.16.0.233 at 2023-09-08 13:21:02 +0000
+I, [2023-09-08T13:21:02.978920 #253]  INFO -- : [3e0f8ad8-1f8e-46a9-8bd0-09b2d6d69457] Processing by TimelogController#index as HTML
+I, [2023-09-08T13:21:02.979013 #253]  INFO -- : [3e0f8ad8-1f8e-46a9-8bd0-09b2d6d69457]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T13:21:02.987346 #253]  INFO -- : [3e0f8ad8-1f8e-46a9-8bd0-09b2d6d69457]   Current user: admin (id=1)
+I, [2023-09-08T13:21:03.491744 #253]  INFO -- : [3e0f8ad8-1f8e-46a9-8bd0-09b2d6d69457]   Rendered timelog/index.html.erb within layouts/base (Duration: 253.2ms | Allocations: 34583)
+I, [2023-09-08T13:21:03.529021 #253]  INFO -- : [3e0f8ad8-1f8e-46a9-8bd0-09b2d6d69457]   Rendered layout layouts/base.html.erb (Duration: 290.6ms | Allocations: 43593)
+I, [2023-09-08T13:21:03.529506 #253]  INFO -- : [3e0f8ad8-1f8e-46a9-8bd0-09b2d6d69457] Completed 200 OK in 550ms (Views: 127.3ms | ActiveRecord: 375.4ms | Allocations: 55057)
+I, [2023-09-08T14:22:45.722204 #251]  INFO -- : [3416d38d-acf5-4d1a-878d-6d09f47ccbad] Started GET "/projects/bubble-spa/issues/gantt" for 172.16.0.233 at 2023-09-08 14:22:45 +0000
+I, [2023-09-08T14:22:45.726480 #251]  INFO -- : [3416d38d-acf5-4d1a-878d-6d09f47ccbad] Processing by GanttsController#show as HTML
+I, [2023-09-08T14:22:45.726770 #251]  INFO -- : [3416d38d-acf5-4d1a-878d-6d09f47ccbad]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T14:22:45.787678 #251]  INFO -- : [3416d38d-acf5-4d1a-878d-6d09f47ccbad]   Current user: admin (id=1)
+I, [2023-09-08T14:22:47.752552 #251]  INFO -- : [3416d38d-acf5-4d1a-878d-6d09f47ccbad]   Rendered gantts/show.html.erb within layouts/base (Duration: 1939.2ms | Allocations: 512998)
+I, [2023-09-08T14:22:47.775816 #251]  INFO -- : [3416d38d-acf5-4d1a-878d-6d09f47ccbad]   Rendered layout layouts/base.html.erb (Duration: 1962.5ms | Allocations: 521848)
+I, [2023-09-08T14:22:47.776101 #251]  INFO -- : [3416d38d-acf5-4d1a-878d-6d09f47ccbad] Completed 200 OK in 2049ms (Views: 1586.6ms | ActiveRecord: 388.2ms | Allocations: 527542)
+I, [2023-09-08T15:03:04.019714 #251]  INFO -- : [2f76107c-118c-406a-9724-cbefd92b926e] Started GET "/projects/bubble-spa/time_entries" for 172.16.0.233 at 2023-09-08 15:03:04 +0000
+I, [2023-09-08T15:03:04.022183 #251]  INFO -- : [2f76107c-118c-406a-9724-cbefd92b926e] Processing by TimelogController#index as HTML
+I, [2023-09-08T15:03:04.022272 #251]  INFO -- : [2f76107c-118c-406a-9724-cbefd92b926e]   Parameters: {"project_id"=>"bubble-spa"}
+I, [2023-09-08T15:03:04.094982 #251]  INFO -- : [2f76107c-118c-406a-9724-cbefd92b926e]   Current user: admin (id=1)
+I, [2023-09-08T15:03:04.606617 #251]  INFO -- : [2f76107c-118c-406a-9724-cbefd92b926e]   Rendered timelog/index.html.erb within layouts/base (Duration: 252.6ms | Allocations: 34638)
+I, [2023-09-08T15:03:04.647970 #251]  INFO -- : [2f76107c-118c-406a-9724-cbefd92b926e]   Rendered layout layouts/base.html.erb (Duration: 294.0ms | Allocations: 43684)
+I, [2023-09-08T15:03:04.648538 #251]  INFO -- : [2f76107c-118c-406a-9724-cbefd92b926e] Completed 200 OK in 626ms (Views: 132.7ms | ActiveRecord: 382.1ms | Allocations: 55411)

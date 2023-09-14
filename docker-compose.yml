@@ -1,35 +1,32 @@
 version: '2'
 
 services:
-  postgresql:
-    image: sameersbn/postgresql:14-20230628
-    environment:
-      - DB_USER=redmine
-      - DB_PASS=password
-      - DB_NAME=redmine_production
-    volumes:
-      - /srv/docker/redmine/postgresql:/var/lib/postgresql
-    healthcheck:
-      test: "psql -U postgres"
-      interval: 3s
-      timeout: 3s
-      retries: 5
-      start_period: 10s
+#  postgresql:
+#    image: sameersbn/postgresql:14-20230628
+#    environment:
+#      - DB_USER=redmine
+#      - DB_PASS=password
+#      - DB_NAME=redmine_production
+#    volumes:
+#      - /srv/docker/redmine/postgresql:/var/lib/postgresql
+#    healthcheck:
+#      test: "psql -U postgres"
+#      interval: 3s
+#      timeout: 3s
+#      retries: 5
+#      start_period: 10s
   redmine:
     build: ./
     image: sameersbn/redmine:5.0.5
-    depends_on:
-      postgresql:
-        condition: service_healthy
     environment:
-      - TZ=Asia/Kolkata
+      - TZ=Asia/Ho_Chi_minh
 
-      - DB_ADAPTER=postgresql
-      - DB_HOST=postgresql
-      - DB_PORT=5432
+      - DB_ADAPTER=mysql2
+      - DB_HOST=192.168.45.52
+      - DB_PORT=19202
       - DB_USER=redmine
-      - DB_PASS=password
-      - DB_NAME=redmine_production
+      - DB_PASS=UnGfAeU75QE2Jx
+      - DB_NAME=nex-redmine-v2
       - DB_SSL_MODE=prefer
 
       - REDMINE_PORT=10083
@@ -67,5 +64,5 @@ services:
     ports:
       - "10083:80"
     volumes:
-      - /srv/docker/redmine/redmine:/home/redmine/data
-      - /srv/docker/redmine/redmine-logs:/var/log/redmine
+      - ./data/redmine:/home/redmine/data
+      - ./data/redmine-logs:/var/log/redmine

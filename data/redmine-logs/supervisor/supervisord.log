@@ -1,0 +1,12 @@
+2023-09-14 06:27:52,072 INFO Included extra file "/etc/supervisor/conf.d/cron.conf" during parsing
+2023-09-14 06:27:52,072 INFO Included extra file "/etc/supervisor/conf.d/nginx.conf" during parsing
+2023-09-14 06:27:52,072 INFO Included extra file "/etc/supervisor/conf.d/unicorn.conf" during parsing
+2023-09-14 06:27:52,072 INFO Set uid to user 0 succeeded
+2023-09-14 06:27:52,097 INFO RPC interface 'supervisor' initialized
+2023-09-14 06:27:52,098 INFO supervisord started with pid 1
+2023-09-14 06:27:53,102 INFO spawned: 'unicorn' with pid 244
+2023-09-14 06:27:53,108 INFO spawned: 'cron' with pid 245
+2023-09-14 06:27:53,112 INFO spawned: 'nginx' with pid 246
+2023-09-14 06:27:54,944 INFO success: unicorn entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-14 06:27:54,944 INFO success: cron entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-14 06:27:54,944 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
