@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+  mysql-dev:
+    image: mysql:8.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: caimaydao234
+      MYSQL_DATABASE: redmine
+    ports:
+      - "33066:3306"
+    volumes:
+      - "/databases/mysql/conf:/etc/mysql/conf.d/config-file.cnf"
+      - "/databases/mysql/data:/var/lib/mysql:rw"
+
+  admin:
+    image: adminer
+    ports:
+      - 8080:8080

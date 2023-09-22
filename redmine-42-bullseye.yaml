@@ -4,11 +4,11 @@ services:
   redmine:
     image: redmine:4.2.10-bullseye
     environment:
-      REDMINE_DB_MYSQL: 192.168.45.52
-      REDMINE_DB_PORT: 19202
-      REDMINE_DB_DATABASE: nex-redmine-v2
-      REDMINE_DB_USERNAME: redmine
-      REDMINE_DB_PASSWORD: UnGfAeU75QE2Jx
+      REDMINE_DB_MYSQL: 192.168.1.11
+      REDMINE_DB_PORT: 33066
+      REDMINE_DB_DATABASE: redmine
+      REDMINE_DB_USERNAME: root
+      REDMINE_DB_PASSWORD: caimaydao234
       REDMINE_DB_ENCODING: utf8
       REDMINE_SECRET_KEY_BASE: supersecretkey
     ports:
