@@ -38,3 +38,16 @@ Newly installed plugins often have problems, many plugins are not compatible, se
 Some links and reference articles about Redmine:
 - https://hocvienagile.com/uu-nhuoc-diem-khi-quan-ly-du-an-bang-redmine/
 - https://news.cloud365.vn/redmine-huong-dan-su-dung-redmine-de-quan-ly-cong-viec-phan-1/
+
+Redmine version anh plugin
+
+Tương thích với Readme version >= 5.0
+
+Redmine issue todo list2: https://github.com/jcatrysse/redmine_issue_todo_lists2 => Tạo todo list task
+redmine time sheet: https://github.com/jrgarlick/redmine_timesheet => Tổng quát time làm task
+Redmine Dynamic edit Issue plugin: https://github.com/ilogeek/redmine_issue_dynamic_edit 
+Redmine Agile plugin (Light version): http://redmineup.com/pages/plugins/agile
+Redmine Check list: https://github.com/jirutka/redmine_checklists
+https://github.com/taqueci/redmine_wysiwyg_editor
+Redmine task list: https://github.com/eichisanden/redmine_markdown_task_list
+Team Resource Monitor: https://github.com/momibun926/redmine_team_resource
