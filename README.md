@@ -51,3 +51,6 @@ Redmine Check list: https://github.com/jirutka/redmine_checklists
 https://github.com/taqueci/redmine_wysiwyg_editor
 Redmine task list: https://github.com/eichisanden/redmine_markdown_task_list
 Team Resource Monitor: https://github.com/momibun926/redmine_team_resource
+
+## Tham khảo
+- Link repo của sameersbn: https://github.com/sameersbn/docker-redmine/blob/master/docker-compose-mysql.yml
